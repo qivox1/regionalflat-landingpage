@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>regionalflat.de — Kommen Sie in den KI-Empfehlungen vor?</title>
+<meta name="description" content="Immer mehr Kunden fragen ChatGPT, Gemini & Google-KI statt zu googeln — und die KI nennt nur drei, vier Namen. Wir sorgen dafür, dass Sie dabei sind. Messbar, transparent, regional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="regionalflat — Startseite">
+      <img src="assets/logo-mark.png" alt="regionalflat Logo">
+    </a>
+    <div class="nav-links">
+      <a href="#problem">Problem</a>
+      <a href="#check">KI-Check</a>
+      <a href="#beweis">Beweis</a>
+      <a href="#loesung">Lösung</a>
+      <a href="#pakete">Pakete</a>
+      <a href="#team">Über uns</a>
+    </div>
+    <a href="#termin" class="btn btn-cta nav-cta">15-Min-Termin sichern</a>
+    <button class="nav-burger" aria-label="Menü" onclick="document.getElementById('pakete').scrollIntoView()">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<span id="top"></span>
+
+<!-- ============ 1. HERO ============ -->
+<header class="hero section" data-screen-label="Hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow reveal"><span class="dot"></span>Mehr KI-Sichtbarkeit. Mehr regionale Aufträge.</span>
+      <h1 class="reveal d1" style="margin-top:22px">Die KI empfiehlt Ihrer Region drei Firmen&nbsp;– <span class="hl">ist Ihre dabei?</span></h1>
+      <div class="hero-sub reveal d2">
+        <div class="sub-line"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Immer mehr Kunden fragen ChatGPT, Gemini &amp; Google-KI statt zu googeln — und die KI nennt nur drei, vier Namen.</span></div>
+        <div class="sub-line"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Wer da nicht dabei ist, existiert für diese Kunden nicht.</span></div>
+        <div class="sub-line"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Wir sorgen dafür, dass Sie dabei sind — und zeigen Ihnen schwarz auf weiß, wo Sie heute stehen.</span></div>
+      </div>
+      <div class="hero-actions btn-row reveal d3">
+        <a href="#termin" class="btn btn-cta btn-lg">Kostenlosen 15-Min-Termin sichern</a>
+        <a href="#check" class="btn btn-ghost">Erst verstehen, wie gemessen wird <span class="arrow">→</span></a>
+      </div>
+      <div class="hero-trust reveal d3">
+        <span class="star">★★★★★</span>
+        <span>20+ Jahre regionales Marketing — jetzt spezialisiert auf KI-Sichtbarkeit.</span>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal d2" style="position:relative">
+      <div class="sim" id="sim">
+        <div class="sim-bar">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <div class="tag"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#2f9b61" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg><b>KI-Antwort</b> · live</div>
+        </div>
+        <div class="sim-body">
+          <div class="msg-user"><div class="bubble" id="simQuestion">Welcher <span class="v" data-branche>Dachdecker</span> in <span class="v" data-stadt>Minden</span> ist zu empfehlen?</div></div>
+          <div class="msg-ai">
+            <div class="ai-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 1 3 3v1h1a3 3 0 0 1 3 3 3 3 0 0 1 0 6 3 3 0 0 1-3 3h-1v1a3 3 0 0 1-6 0v-1H8a3 3 0 0 1-3-3 3 3 0 0 1 0-6 3 3 0 0 1 3-3h1V5a3 3 0 0 1 3-3Z"/></svg></div>
+            <div class="ai-content">
+              <div class="ai-intro" id="aiIntro"><span class="typing"><i></i><i></i><i></i></span></div>
+              <div class="reco" id="reco">
+                <div class="reco-item" data-i="1"><span class="rank">1</span><div><div class="rname">Heikam Bedachungen</div><div class="rmeta">4,9 ★ · empfohlen &amp; verlinkt</div></div><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div>
+                <div class="reco-item" data-i="2"><span class="rank">2</span><div><div class="rname">Renneberg &amp; Sohn</div><div class="rmeta">4,8 ★ · empfohlen &amp; verlinkt</div></div><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div>
+                <div class="reco-item" data-i="3"><span class="rank">3</span><div><div class="rname">Dach-Steiger GmbH</div><div class="rmeta">4,7 ★ · empfohlen &amp; verlinkt</div></div><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div>
+                <div class="reco-gap" data-i="4">
+                  <span class="rank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+                  <div class="gtext"><b>… und Sie?</b><span>In dieser Antwort nicht zu finden.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sabrina-hero">
+        <div class="ph-bubble">Hi, ich bin <b>Sabrina</b>. In 60&nbsp;Sekunden zeig ich dir, warum die KI gerade über deine Kunden entscheidet. 👋</div>
+        <img class="ava" src="assets/sabrina-hero.webp" alt="Sabrina, Ihre KI-Assistentin von regionalflat">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 2. SELBSTTEST ============ -->
+<section class="section section--tint" id="selbsttest" data-screen-label="Selbsttest">
+  <div class="wrap">
+    <div class="selftest reveal">
+      <span class="badge-step">Selbsttest · 30 Sekunden</span>
+      <span class="eyebrow">Glauben Sie uns nicht — prüfen Sie nach</span>
+      <h3 style="margin-top:14px">Öffnen Sie ChatGPT oder die Google-KI und fragen Sie selbst.</h3>
+      <p class="selftest-intro">Wählen Sie Ihre Branche – wir formulieren die passende Frage. Einfach kopieren, in die KI einfügen und sehen, wer empfohlen wird.</p>
+      <div class="composer">
+        <div class="composer-selects">
+          <label class="sel-field"><span>Branche</span><select id="catParent" aria-label="Oberkategorie"></select></label>
+          <label class="sel-field"><span>Bereich</span><select id="catChild" aria-label="Unterkategorie"></select></label>
+        </div>
+        <div class="composer-prompt">
+          <span class="cp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <div class="cp-text" id="copyText">Wen empfiehlst du für <span class="v" id="cpBranche">Dachdecker</span> in <span class="v" data-stadt>Minden</span>?</div>
+          <button class="btn btn-primary copy-btn" id="copyBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            <span class="cbtxt">Frage kopieren</span>
+          </button>
+        </div>
+      </div>
+      <p class="after">Sie werden Ihre Konkurrenz finden — aber vermutlich nicht sich. <b>Genau das ändern wir.</b> Kein Marketing-Versprechen, sondern ein Aha-Moment in Ihrem eigenen Chat-Fenster.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. PROBLEM ============ -->
+<section class="section" id="problem" data-screen-label="Problem">
+  <div class="wrap">
+    <div class="grid-2">
+      <div class="sec-head reveal" style="margin-bottom:0">
+        <span class="eyebrow"><span class="dot"></span>Das Problem — in Ihrer Sprache</span>
+        <h2 class="h2" style="margin-top:16px">Ihre Kunden suchen heute anders – und finden dabei oft nur Ihre Konkurrenz.</h2>
+        <p class="lead">Kein Fachjargon. Drei Sätze, die jeder Betrieb gerade am eigenen Leib spürt.</p>
+        <img src="assets/sabrina-facepalm.jpg" alt="Sabrina" style="margin-top:32px; border-radius:24px; box-shadow:var(--shadow); aspect-ratio:4/3.6; object-fit:cover; object-position:center 18%; width:100%; max-width:440px;">
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px">
+        <div class="card prob-card reveal d1">
+          <span class="num">01</span>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>Kunden googeln nicht mehr lange.</h3>
+          <p>Sie fragen die KI — und bekommen 3–4 fertige Empfehlungen statt zehn blauer Links. Die Auswahl trifft heute der Algorithmus, nicht mehr die Trefferliste.</p>
+        </div>
+        <div class="card prob-card reveal d2">
+          <span class="num">02</span>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+          <h3>Platz 1 bei Google reicht nicht mehr.</h3>
+          <p>Sie können organisch ganz oben stehen und in der KI trotzdem nicht vorkommen. Das ist kein Ausnahmefall — das ist gerade der Normalfall.</p>
+        </div>
+        <div class="card prob-card accent reveal d3">
+          <span class="num">03</span>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Jeder Tag zählt.</h3>
+          <p>Jede KI-Antwort ohne Ihren Namen ist eine verlorene Anfrage — die Ihr Wettbewerber bekommt. Nicht irgendwann. Heute.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branchen-Spiegel -->
+    <div class="mirror reveal" style="margin-top:64px" data-screen-label="Branchen-Spiegel">
+      <span class="eyebrow"><span class="dot"></span>Erkennen Sie sich wieder?</span>
+      <h3 style="margin-top:16px">So fragen Ihre Kunden die KI gerade — über Ihre Branche.</h3>
+      <div class="chips" id="brancheChips"></div>
+      <div class="mirror-q">
+        <div class="label">Typische KI-Anfrage</div>
+        <div class="qtext" id="mirrorQ"></div>
+        <div class="sub" id="mirrorSub"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. CHECK ERKLÄRT ============ -->
+<section class="section section--tint" id="check" data-screen-label="KI-Check erklärt">
+  <div class="wrap">
+    <div class="grid-2">
+      <div>
+        <div class="sec-head reveal" style="margin-bottom:0">
+          <span class="eyebrow">So arbeiten wir — ganz konkret</span>
+          <h2 class="h2" style="margin-top:14px">Wir bringen Ihren Namen in die KI-Empfehlungen – Woche für Woche.</h2>
+          <p class="lead">Kein Hexenwerk: Wir tippen genau die Fragen, die Ihre Kunden stellen, in ChatGPT, Gemini &amp; die Google-KI. Wir halten fest, wer empfohlen wird — und sorgen dafür, dass Ihr Name dazugehört.</p>
+        </div>
+        <div class="steps reveal d1">
+          <div class="step-item"><span class="sn">1</span><div><h4>Fragen sammeln</h4><p>Wir sammeln die echten Fragen Ihrer Kunden — für Ihre Branche, in Ihrer Region.</p></div></div>
+          <div class="step-item"><span class="sn">2</span><div><h4>KI befragen</h4><p>Wir stellen sie ChatGPT, Gemini, Perplexity &amp; der Google-KI — regelmäßig, nicht nur einmal.</p></div></div>
+          <div class="step-item"><span class="sn">3</span><div><h4>Lücken schließen</h4><p>Wo Sie fehlen, bauen wir genau die Inhalte und Einträge, die die KI zum Empfehlen braucht.</p></div></div>
+        </div>
+        <div class="goal-banner reveal d2">
+          <svg class="gb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <div>Das Ziel ist nicht „irgendwo genannt", sondern der ganze Weg: <span class="gb-flow"><span class="gb-tag">erwähnt</span> → <span class="gb-tag win">empfohlen &amp; verlinkt</span></span> — <b>erst dann kommen die Anfragen.</b></div>
+        </div>
+      </div>
+      <div class="robo-card reveal d1">
+        <img src="assets/sabrina-robot.webp" alt="Sabrina mit KI-Assistenz — die Daten kommen aus echten KI-Antworten">
+        <div class="cap">Im Hintergrund läuft die Technik — für Sie zählt nur das Ergebnis: <b>mehr Anfragen.</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. BEWEIS ============ -->
+<section class="section" id="beweis" data-screen-label="Beweis Vorher/Nachher">
+  <div class="wrap">
+    <div class="sec-head center measure reveal">
+      <span class="eyebrow"><span class="dot"></span>Der Beweis</span>
+      <h2 class="h2" style="margin-top:16px">Aus „unsichtbar" wurde „ganz oben".</h2>
+      <p class="lead">Ein Handwerksbetrieb, Stadt im Norden. Anonymisiert, aber echt. So sah der Weg aus.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-card before reveal d1">
+        <div class="tag">Vorher</div>
+        <div class="gauge">
+          <div class="ring" data-score="50" data-color="#9a9a92">
+            <svg width="104" height="104" viewBox="0 0 104 104"><circle cx="52" cy="52" r="46" fill="none" stroke="#ececec" stroke-width="11"/><circle class="ring-fg" cx="52" cy="52" r="46" fill="none" stroke="#b9b9b2" stroke-width="11" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="289"/></svg>
+            <div class="val"><b class="cnt" data-to="50">0</b><span>/100</span></div>
+          </div>
+          <div class="grade"><div class="g">F</div><div class="lbl">Sichtbarkeits-Score</div></div>
+        </div>
+        <div class="vis-row">
+          <div class="vlabel"><span>Sichtbarkeit in KI-Antworten</span><b class="cnt" data-to="0">0&nbsp;%</b></div>
+          <div class="bar"><i data-w="3"></i></div>
+        </div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>In keiner einzigen KI-Empfehlung gelistet</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Konkurrenz wurde stattdessen empfohlen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Technisch nicht KI-lesbar</li>
+        </ul>
+      </div>
+      <div class="ba-card after reveal d2">
+        <div class="tag">Nachher</div>
+        <div class="gauge">
+          <div class="ring" data-score="92" data-color="#3CB371">
+            <svg width="104" height="104" viewBox="0 0 104 104"><circle cx="52" cy="52" r="46" fill="none" stroke="#dcefe4" stroke-width="11"/><circle class="ring-fg" cx="52" cy="52" r="46" fill="none" stroke="#3CB371" stroke-width="11" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="289"/></svg>
+            <div class="val"><b class="cnt" data-to="92">0</b><span>/100</span></div>
+          </div>
+          <div class="grade"><div class="g">A</div><div class="lbl">Sichtbarkeits-Score</div></div>
+        </div>
+        <div class="vis-row">
+          <div class="vlabel"><span>Sichtbarkeit in KI-Antworten</span><b class="cnt" data-to="100">0&nbsp;%</b></div>
+          <div class="bar"><i data-w="100"></i></div>
+        </div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>In den Top-Empfehlungen für die wichtigsten Fragen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Empfohlen <em>und</em> als Quelle verlinkt</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Mehr qualifizierte Anfragen pro Monat</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ba-quote reveal d2">
+      <img src="assets/sabrina-teak.png" alt="Stimme aus dem Betrieb">
+      <div>
+        <div class="qt">„Wir wussten gar nicht, dass es diese ‚zweite Suche' überhaupt gibt. Heute kommen Anfragen, von denen wir früher nichts geahnt haben."</div>
+        <div class="qn">— Inhaber, Handwerksbetrieb (Name anonymisiert)</div>
+      </div>
+    </div>
+    <div class="center" style="margin-top:34px"><a href="#termin" class="btn btn-ghost">Ganzes Beispiel im Termin ansehen <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- ============ 6. LÖSUNG ============ -->
+<section class="section section--tint" id="loesung" data-screen-label="Lösung">
+  <div class="wrap">
+    <div class="sec-head center measure reveal">
+      <span class="eyebrow"><span class="dot"></span>Was wir konkret tun</span>
+      <h2 class="h2" style="margin-top:16px">Drei Dinge. Klar benannt. Jeden Monat.</h2>
+      <p class="lead">Kein Technik-Kauderwelsch — sondern was es für Ihre Anfragen bedeutet.</p>
+    </div>
+    <div class="grid-3" style="margin-top:64px">
+      <div class="card sol-card reveal d1">
+        <div class="num">1</div>
+        <h3>Sichtbar machen</h3>
+        <p>Wir bringen Ihren Betrieb dorthin, wo die KI ihre Empfehlungen herholt: die richtigen Verzeichnisse, Bewertungen und Inhalte — sauber und konsistent.</p>
+      </div>
+      <div class="card sol-card reveal d2">
+        <div class="num">2</div>
+        <h3>Inhalte, die die KI versteht</h3>
+        <p>Monatlich neue Texte in dem Format, das KI-Systeme zitieren — als klare Antworten auf die echten Fragen Ihrer Kunden.</p>
+      </div>
+      <div class="card sol-card reveal d3">
+        <div class="num">3</div>
+        <h3>Schwarz auf weiß</h3>
+        <p>Monatlicher Bericht: Wo stehen Sie, wie entwickelt es sich, was kommt als Nächstes. Keine Blackbox.</p>
+      </div>
+    </div>
+    <details class="tech-toggle reveal">
+      <summary><span class="pl">＋</span> Für Technik-Interessierte: Was im Hintergrund passiert</summary>
+      <div class="tbody">Konkret arbeiten wir u. a. mit strukturierten Daten (<code>Schema.org</code>: LocalBusiness, Service, FAQPage), einer sauberen <code>llms.txt</code> &amp; <code>robots.txt</code>, semantischem HTML und schnellen Ladezeiten — damit KI-Systeme Ihre Inhalte zuverlässig lesen, einordnen und zitieren. Für Sie zählt nur das Ergebnis: mehr Anfragen.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ 7. PAKETE ============ -->
+<section class="section" id="pakete" data-screen-label="Pakete">
+  <div class="wrap">
+    <div class="sec-head center measure reveal">
+      <span class="eyebrow">Pakete — volle Transparenz</span>
+      <h2 class="h2" style="margin-top:16px">Ab 299&nbsp;€ im Monat sichtbar im wichtigsten Kanal der Zukunft.</h2>
+      <p class="lead">Weniger als ein guter Werbeflyer — dafür dauerhaft empfohlen, wo Ihre Kunden heute fragen. Alle Preise offen, kein „auf Anfrage". Den KI-Sichtbarkeits-Check gibt es vorab kostenlos per E-Mail.</p>
+    </div>
+    <div class="price-grid" style="margin-top:56px">
+      <!-- Starter -->
+      <div class="plan reveal d1">
+        <div class="pname">Starter</div>
+        <div class="pfor">Der Einstieg in die KI-Sichtbarkeit.</div>
+        <div class="price"><span class="amt">299&nbsp;€</span> <span class="per">/&nbsp;Monat</span></div>
+        <ul class="feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kostenloses GEO-Erstgespräch</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><b>2</b> GEO-Texte / Monat</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Monitoring quartalsweise</li>
+          <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Schema-Markup</li>
+          <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Wettbewerbs-Tracking</li>
+        </ul>
+        <a href="#termin" class="btn btn-secondary">Auswählen</a>
+      </div>
+      <!-- Professional / beliebt -->
+      <div class="plan pop reveal d2">
+        <span class="ribbon">★ Beliebt — der Standard</span>
+        <div class="pname">Professional</div>
+        <div class="pfor">Für alle, die wirklich gefunden werden wollen.</div>
+        <div class="price"><span class="amt">499&nbsp;€</span> <span class="per">/&nbsp;Monat</span></div>
+        <ul class="feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kostenloses GEO-Erstgespräch</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><b>4</b> GEO-Texte / Monat</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Monitoring monatlich</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Schema-Markup inklusive</li>
+          <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Wettbewerbs-Tracking</li>
+        </ul>
+        <a href="#termin" class="btn btn-primary">Auswählen</a>
+      </div>
+      <!-- Premium -->
+      <div class="plan reveal d3">
+        <div class="pname">Premium</div>
+        <div class="pfor">Wer seine Region dominieren will.</div>
+        <div class="price"><span class="amt">799&nbsp;€</span> <span class="per">/&nbsp;Monat</span></div>
+        <ul class="feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kostenloses GEO-Erstgespräch</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><b>8</b> GEO-Texte / Monat</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Monitoring monatlich</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Schema-Markup inklusive</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Wikipedia- &amp; Wettbewerbs-Tracking</li>
+        </ul>
+        <a href="#termin" class="btn btn-secondary">Auswählen</a>
+      </div>
+    </div>
+    <div class="price-terms reveal">
+      <span class="pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5l3 2"/><circle cx="12" cy="12" r="9"/></svg><span>Mindestlaufzeit immer <b>6 Monate</b></span></span>
+      <span class="save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;vertical-align:-3px;margin-right:6px"><path d="M20.6 13.4 11 23l-8-8V4h11z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>15&nbsp;% Rabatt bei 12-Monats-Vertrag</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. TEAM / WER WIR SIND ============ -->
+<section class="section section--tint" id="team" data-screen-label="Über uns">
+  <div class="wrap">
+    <div class="grid-2">
+      <div class="team-img reveal">
+        <img src="assets/sabrina-coffee.jpg" alt="Sabrina von regionalflat">
+        <div class="float">
+          <div class="num">20+</div>
+          <div class="lbl">Jahre regionales<br>Marketing</div>
+        </div>
+      </div>
+      <div class="reveal d1">
+        <span class="eyebrow">Wer wir sind — das Co-Create-Prinzip</span>
+        <h2 class="h2" style="margin-top:16px">Die erste GEO-Agentur für den regionalen Mittelstand – damit Sie gefunden werden und Aufträge gewinnen.</h2>
+        <p class="lead" style="margin-top:18px">Wir arbeiten nach dem <b>Co-Create-Prinzip</b>: 20+ Jahre Erfahrung im regionalen Marketing und das echte Wissen um Ihre Branche treffen auf die Schnelligkeit der KI. Der Mensch bringt Urteilsvermögen und Branchenkenntnis, die KI Tempo und Reichweite — zusammen entsteht der Mehrwert für Ihren Betrieb.</p>
+        <div class="cocreate">
+          <div class="cc-part"><b>Mensch</b><span>20+ Jahre Branchen- &amp; Marketing-Kompetenz</span></div>
+          <span class="cc-plus">+</span>
+          <div class="cc-part"><b>KI</b><span>Tempo, Reichweite &amp; Sichtbarkeit</span></div>
+          <span class="cc-eq">=</span>
+          <div class="cc-part win"><b>Mehrwert</b><span>für Ihren Betrieb vor Ort</span></div>
+        </div>
+        <div class="stat-strip">
+          <div class="st"><b>4</b><span>KI-Systeme im Blick</span></div>
+          <div class="st"><b>100%</b><span>transparente Preise</span></div>
+          <div class="st"><b>regional</b><span>im Fokus</span></div>
+        </div>
+        <div class="sabrina-intro">
+          <img src="assets/sabrina-avatar.webp" alt="Sabrina">
+          <div class="si-t">
+            <b>Das ist Sabrina.</b>
+            <p>Ihre KI-Assistentin, die im Hintergrund die Daten zusammenträgt — damit am Ende ein Mensch mit Ihnen spricht. Sie hat Sie durch diese ganze Seite begleitet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. FINALER CTA / TERMIN ============ -->
+<section class="section section--green final" id="termin" data-screen-label="Termin">
+  <div class="wrap final-grid">
+    <div class="reveal">
+      <span class="eyebrow">Nur 15 Minuten — und Sie wissen, wo Sie stehen</span>
+      <h2 style="margin-top:14px">Lassen Sie uns Ihre konkreten Zahlen ansehen.</h2>
+      <p class="lead" style="margin-top:18px">Ich zeige Ihnen in 15 Minuten Ihre echten KI-Sichtbarkeits-Zahlen — und wer in Ihrer Stadt schon empfohlen wird. Kein Verkaufsgespräch, sondern ein klarer Befund.</p>
+      <ul class="fpoints">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Ihre persönliche KI-Sichtbarkeit — live gezeigt</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Wer in Ihrer Region bereits dominiert</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Selbst buchen — kein Formular-Umweg</li>
+      </ul>
+      <div class="fallback">
+        <span>Lieber direkt?</span>
+        <a href="tel:+4900000000"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Anrufen</a>
+        <a href="mailto:hallo@regionalflat.de"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg> E-Mail</a>
+      </div>
+    </div>
+
+    <!-- Booking widget -->
+    <div class="booking reveal d1" id="booking">
+      <div class="booking-head">
+        <img src="assets/sabrina-avatar.webp" alt="Sabrina">
+        <div class="bt"><b>15-Min-Termin mit Sabrina</b><span>Per Video oder Telefon · kostenlos</span></div>
+        <span class="dur">15 Min</span>
+      </div>
+      <div class="booking-body">
+        <div id="bkPicker">
+          <div class="bk-label">1 · Tag wählen</div>
+          <div class="days" id="days"></div>
+          <div class="bk-label" style="margin-top:20px">2 · Uhrzeit wählen</div>
+          <div class="slots" id="slots"></div>
+          <div class="confirm">
+            <button class="btn btn-cta" id="confirmBtn" disabled style="opacity:.5;cursor:not-allowed">Termin bestätigen</button>
+          </div>
+        </div>
+        <div class="done-msg" id="bkDone">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <b>Termin reserviert!</b>
+          <p id="bkDoneText">Wir haben Ihnen einen Vorschlag geschickt. Sabrina meldet sich zur Bestätigung.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="wrap">
+    <div class="footer-left">
+    <div class="fcol-brand">
+      <a class="brand" href="#top" aria-label="regionalflat — Startseite">
+        <img src="assets/logo-footer.png" alt="regionalflat Logo">
+        <span class="footer-wordmark">regional<b>flat</b></span>
+      </a>
+      <p class="fdesc">Die erste GEO-Agentur für den regionalen Mittelstand. Wir bringen Ihren Betrieb in die KI-Empfehlungen — messbar, transparent, regional.</p>
+    </div>
+    <div>
+      <h4>Leistungen</h4>
+      <ul>
+        <li><a href="#check">KI-Sichtbarkeits-Check</a></li>
+        <li><a href="#loesung">GEO-Optimierung</a></li>
+        <li><a href="#pakete">Pakete &amp; Preise</a></li>
+        <li><a href="#beweis">Referenzen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Unternehmen</h4>
+      <ul>
+        <li><a href="#team">Über uns</a></li>
+        <li><a href="#termin">Termin buchen</a></li>
+        <li><a href="mailto:hallo@regionalflat.de">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">AGB</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="footer-aside">
+      <div class="footer-badge"><img src="assets/startup-deutschland.webp" alt="StartUp Deutschland — powered by Innovation"></div>
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.5 6.4a2.8 2.8 0 0 0-2-2C18.9 4 12 4 12 4s-6.9 0-8.5.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 5.6 2.8 2.8 0 0 0 2 2C5 20 12 20 12 20s6.9 0 8.5-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-5.6z"/><path d="m10 15 5-3-5-3z" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 regionalflat.de — alle Rechte vorbehalten.</span>
+    <span>Made in der Region · für die Region.</span>
+  </div>
+</footer>
+
+<!-- ============ FLOATING SABRINA GUIDE ============ -->
+<div class="guide" id="guide" aria-hidden="true">
+  <img class="g-ava" src="assets/sabrina-avatar.webp" alt="Sabrina">
+  <div class="g-bubble">
+    <button class="g-close" id="guideClose" aria-label="Schließen">✕</button>
+    <span id="guideText"></span>
+  </div>
+</div>
+
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" rx="20" fill="#215E3C"/>
+    <path d="M50 22c-9 0-16 7-16 16 0 11 16 26 16 26s16-15 16-26c0-9-7-16-16-16z" fill="#3CB371"/>
+    <circle cx="50" cy="38" r="6" fill="#fff"/>
+  </svg>
+</template>
+<script src="app.js"></script>
+</body>
+</html>
