@@ -104,6 +104,35 @@
   var mirrorSub = document.getElementById('mirrorSub');
   var currentStadt = 'Minden';
 
+  /* Slug je Branche (Reihenfolge = branchen[]) — für URL-Parameter ?branche= */
+  var brancheSlugs = ['dachdecker','elektriker','heizung','maler','tischler','kfz','baeckerei','restaurant','friseur','zahnarzt','apotheke','steuerberater','immobilien','fahrschule','hotel','gebaeudereinigung'];
+
+  /* Kosten des Nichtstuns je Branche-Slug — ein verlorener Auftrag in Euro */
+  var costBySlug = {
+    dachdecker:       'Ein einziger Dachauftrag bringt schnell <b>3.000–15.000 €</b>.',
+    elektriker:       'Eine Installation oder Wallbox bringt <b>1.500–6.000 €</b>.',
+    heizung:          'Eine neue Heizung oder Wärmepumpe bringt <b>8.000–25.000 €</b>.',
+    maler:            'Ein Anstrich-Auftrag bringt <b>1.500–6.000 €</b>.',
+    tischler:         'Ein Möbelstück nach Maß bringt <b>2.000–8.000 €</b>.',
+    kfz:              'Eine Reparatur oder Inspektion bringt <b>300–2.500 €</b>.',
+    baeckerei:        'Ein neuer Stammkunde bringt <b>500–1.500 €</b> im Jahr.',
+    restaurant:       'Eine Reservierung oder Feier bringt <b>100–5.000 €</b>.',
+    friseur:          'Ein neuer Stammkunde bringt <b>300–800 €</b> im Jahr.',
+    zahnarzt:         'Ein neuer Patient bringt <b>500–3.000 €</b>.',
+    apotheke:         'Ein neuer Stammkunde bringt <b>mehrere Hundert Euro</b> im Jahr.',
+    steuerberater:    'Ein neues Mandat bringt <b>2.000–10.000 €</b> im Jahr.',
+    immobilien:       'Eine einzige Vermittlung bringt <b>5.000–30.000 €</b> Provision.',
+    fahrschule:       'Ein Fahrschüler bringt <b>2.000–3.500 €</b>.',
+    hotel:            'Eine Buchung bringt <b>100–600 €</b> — ein Stammgast ein Vielfaches.',
+    gebaeudereinigung:'Ein Reinigungsvertrag bringt <b>5.000–30.000 €</b> im Jahr.'
+  };
+  var costLine = document.getElementById('costLine');
+  function updateCost(idx) {
+    if (!costLine) return;
+    var msg = costBySlug[brancheSlugs[idx]] || costBySlug.dachdecker;
+    costLine.innerHTML = msg + ' Nennt die KI bei der nächsten Suche Ihren Wettbewerber statt Sie, ist <b>genau dieser Auftrag weg</b> — und 299&nbsp;€/Monat sind weniger als ein einziger davon.';
+  }
+
   function renderMirror(idx) {
     var b = branchen[idx];
     mirrorQ.style.opacity = 0;
@@ -112,17 +141,23 @@
       mirrorSub.innerHTML = b.sub;
       mirrorQ.style.opacity = 1;
     }, 160);
+    updateCost(idx);
+  }
+  function activeChipIndex() {
+    if (!chipWrap) return 0;
+    var a = chipWrap.querySelector('.chip.active');
+    return a ? Array.prototype.indexOf.call(chipWrap.children, a) : 0;
   }
   if (chipWrap) {
     branchen.forEach(function (b, i) {
       var c = document.createElement('button');
       c.className = 'chip' + (i === 0 ? ' active' : '');
-      c.textContent = b.name;
+      c.innerHTML = b.name;
       c.addEventListener('click', function () {
         chipWrap.querySelectorAll('.chip').forEach(function (x) { x.classList.remove('active'); });
         c.classList.add('active');
         renderMirror(i);
-        syncPersonalization(b.name, currentStadt);
+        syncPersonalization(decode(b.name), currentStadt);
       });
       chipWrap.appendChild(c);
     });
@@ -306,11 +341,16 @@
     if (guideDismissed || i === currentGuide) return;
     currentGuide = i;
     guideText.textContent = guideMessages[i].text;
+    guide.removeAttribute('inert');
+    guide.setAttribute('aria-hidden', 'false');
     guide.classList.add('show');
   }
   if (guideClose) {
     guideClose.addEventListener('click', function () {
-      guideDismissed = true; guide.classList.remove('show');
+      guideDismissed = true;
+      guide.classList.remove('show');
+      guide.setAttribute('inert', '');
+      guide.setAttribute('aria-hidden', 'true');
     });
   }
   if (guide && 'IntersectionObserver' in window) {
@@ -326,5 +366,82 @@
       var el = document.querySelector(m.sel);
       if (el) gio.observe(el);
     });
+  }
+
+  /* ---------- STADT-EINGABE (Fallback für Nicht-Mail-Besucher) ---------- */
+  var stadtInput = document.getElementById('stadtInput');
+  if (stadtInput) {
+    if (!stadtInput.value) stadtInput.value = currentStadt;
+    stadtInput.addEventListener('input', function () {
+      var v = stadtInput.value.trim();
+      if (window.__rfSetStadt) window.__rfSetStadt(v || 'Minden');
+    });
+  }
+
+  /* ---------- PERSONALISIERUNG VIA URL (?ort= &branche= &web=) ---------- */
+  var slugToTree = {
+    dachdecker:['Handwerk','Dachdecker'], elektriker:['Handwerk','Elektro'],
+    heizung:['Handwerk','Sanitär'], maler:['Handwerk','Maler und Lackierer'],
+    tischler:['Handwerk','Tischler/Schreiner'], kfz:['Handwerk','Kfz-Handwerk'],
+    baeckerei:['Handwerk','Bäckerei/Konditorei'], restaurant:['Gastronomie','Restaurant'],
+    friseur:['Handwerk','Friseur und Kosmetik'], zahnarzt:['Gesundheitswesen','Zahnarztpraxis'],
+    apotheke:['Gesundheitswesen','Apotheke'], steuerberater:['Recht und Finanzen','Steuerberatung und Wirtschaftsprüfung'],
+    immobilien:['Dienstleistung','Immobilien'], fahrschule:['Bildungseinrichtung','Fahrschule'],
+    hotel:['Gastronomie','Hotel mit Gastronomie'], gebaeudereinigung:['Dienstleistung','Reinigung']
+  };
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var pBranche = (params.get('branche') || '').toLowerCase().trim();
+    var pOrt = (params.get('ort') || '').trim();
+    var pWeb = (params.get('web') || '').trim();
+
+    if (pBranche && brancheSlugs.indexOf(pBranche) >= 0 && chipWrap) {
+      var bi = brancheSlugs.indexOf(pBranche);
+      if (chipWrap.children[bi]) chipWrap.children[bi].click();
+      // Selbsttest-Dropdowns mitziehen
+      var tree = slugToTree[pBranche];
+      if (tree && catParent && catChild) {
+        catParent.value = tree[0]; fillChildren(tree[0]);
+        catChild.value = tree[1]; updatePrompt();
+      }
+    }
+    if (pOrt && window.__rfSetStadt) {
+      currentStadt = pOrt;
+      if (stadtInput) stadtInput.value = pOrt;
+      window.__rfSetStadt(pOrt);
+    }
+    if (pWeb) {
+      var host = pWeb.replace(/^https?:\/\//, '').replace(/\/$/, '');
+      document.querySelectorAll('[data-web]').forEach(function (el) { el.textContent = host; });
+      var pb = document.getElementById('persoBanner');
+      if (pb) pb.classList.add('show');
+    }
+  } catch (e) {}
+
+  /* ---------- REFERENZ-SLIDER (Beweis) ---------- */
+  var slider = document.getElementById('refSlider');
+  if (slider) {
+    var slides = slider.querySelectorAll('.ref-slide');
+    var dotsWrap = document.getElementById('refDots');
+    var prev = document.getElementById('refPrev');
+    var next = document.getElementById('refNext');
+    var cur = 0;
+    function go(i) {
+      cur = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) { s.classList.toggle('active', n === cur); });
+      if (dotsWrap) dotsWrap.querySelectorAll('.ref-dot').forEach(function (d, n) { d.classList.toggle('on', n === cur); });
+    }
+    if (dotsWrap) {
+      slides.forEach(function (s, n) {
+        var d = document.createElement('button');
+        d.className = 'ref-dot' + (n === 0 ? ' on' : '');
+        d.setAttribute('aria-label', 'Referenz ' + (n + 1));
+        d.addEventListener('click', function () { go(n); });
+        dotsWrap.appendChild(d);
+      });
+    }
+    if (prev) prev.addEventListener('click', function () { go(cur - 1); });
+    if (next) next.addEventListener('click', function () { go(cur + 1); });
+    go(0);
   }
 })();
