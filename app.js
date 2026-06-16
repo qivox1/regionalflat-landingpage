@@ -109,16 +109,28 @@
   }
 
   /* ---------- SELBSTTEST: Direkt-Links zu ChatGPT / Perplexity ---------- */
+  var rfLastQuestion = '';
   function updateAiLinks() {
     var ct = document.getElementById('copyText');
     if (!ct) return;
-    var q = encodeURIComponent(ct.textContent.trim().replace(/\s+/g, ' '));
-    var gpt = document.getElementById('openChatgpt');
-    var ppx = document.getElementById('openPerplexity');
-    if (gpt) gpt.href = 'https://chatgpt.com/?q=' + q;
-    if (ppx) ppx.href = 'https://www.perplexity.ai/search?q=' + q;
+    rfLastQuestion = ct.textContent.trim().replace(/\s+/g, ' ');
+    var q = encodeURIComponent(rfLastQuestion);
+    function setHref(id, url) { var el = document.getElementById(id); if (el) el.href = url; }
+    setHref('openChatgpt', 'https://chatgpt.com/?q=' + q);
+    setHref('openGemini', 'https://gemini.google.com/app'); // Gemini erlaubt keine vorbefüllte URL → Frage liegt in der Zwischenablage
+    setHref('openGoogle', 'https://www.google.com/search?udm=50&q=' + q); // Google AI Mode
+    setHref('openPerplexity', 'https://www.perplexity.ai/search?q=' + q);
+    setHref('openClaude', 'https://claude.ai/new?q=' + q);
   }
   updateAiLinks();
+  ['openChatgpt', 'openGemini', 'openGoogle', 'openPerplexity', 'openClaude'].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('click', function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(rfLastQuestion).catch(function () {});
+      }
+    });
+  });
 
   /* ---------- BRANCHEN-SPIEGEL ---------- */
   var branchen = [
