@@ -253,58 +253,123 @@
     } else { playBeweis(); }
   }
 
-  /* ---------- BOOKING widget ---------- */
+  /* ---------- BOOKING widget (echte Termine via Apps Script) ---------- */
+  // Nach dem Deploy hier die Web-App-URL eintragen (…/exec).
+  // Leer lassen = Fallback auf die Google-Buchungsseite (Button im Widget).
+  var BOOKING_ENDPOINT = '';
+
   var daysWrap = document.getElementById('days');
   var slotsWrap = document.getElementById('slots');
   var confirmBtn = document.getElementById('confirmBtn');
   var bkPicker = document.getElementById('bkPicker');
+  var bkSteps = document.getElementById('bkSteps');
+  var bkLoading = document.getElementById('bkLoading');
+  var bkForm = document.getElementById('bkForm');
+  var bkName = document.getElementById('bkName');
+  var bkEmail = document.getElementById('bkEmail');
+  var bkCompany = document.getElementById('bkCompany');
+  var bkErr = document.getElementById('bkErr');
+  var bkFallback = document.getElementById('bkFallback');
   var bkDone = document.getElementById('bkDone');
   var bkDoneText = document.getElementById('bkDoneText');
-  var selDay = null, selSlot = null;
-  var dayNames = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
-  var slotTimes = ['09:00', '10:30', '13:00', '14:30', '16:00', '17:30'];
+  var selIso = null;
 
+  function bkShowFallback() {
+    if (bkLoading) bkLoading.style.display = 'none';
+    if (bkSteps) bkSteps.hidden = true;
+    if (bkFallback) bkFallback.hidden = false;
+  }
+  function bkEmailOk(v) { return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v); }
   function refreshConfirm() {
-    var ok = selDay !== null && selSlot !== null;
+    var ok = !!selIso && bkName && bkName.value.trim() && bkEmail && bkEmailOk(bkEmail.value.trim());
+    if (!confirmBtn) return;
     confirmBtn.disabled = !ok;
     confirmBtn.style.opacity = ok ? '1' : '.5';
     confirmBtn.style.cursor = ok ? 'pointer' : 'not-allowed';
   }
-  if (daysWrap) {
-    var today = new Date();
-    var count = 0, d = new Date(today);
-    while (count < 5) {
-      d.setDate(d.getDate() + 1);
-      if (d.getDay() === 0 || d.getDay() === 6) continue; // skip weekends
-      (function (dateObj) {
-        var btn = document.createElement('button');
-        btn.className = 'day';
-        btn.innerHTML = '<div class="dn">' + dayNames[dateObj.getDay()] + '</div><div class="dd">' + dateObj.getDate() + '</div>';
-        btn.addEventListener('click', function () {
-          daysWrap.querySelectorAll('.day').forEach(function (x) { x.classList.remove('sel'); });
-          btn.classList.add('sel');
-          selDay = dateObj.getDate() + '.' + (dateObj.getMonth() + 1) + '.';
-          refreshConfirm();
-        });
-        daysWrap.appendChild(btn);
-      })(new Date(d));
-      count++;
-    }
-    slotTimes.slice(0, 4).forEach(function (t) {
+  function renderSlots(times) {
+    slotsWrap.innerHTML = ''; selIso = null;
+    times.forEach(function (t) {
       var s = document.createElement('button');
-      s.className = 'slot'; s.textContent = t;
+      s.type = 'button'; s.className = 'slot'; s.textContent = t.hm;
       s.addEventListener('click', function () {
         slotsWrap.querySelectorAll('.slot').forEach(function (x) { x.classList.remove('sel'); });
-        s.classList.add('sel'); selSlot = t; refreshConfirm();
+        s.classList.add('sel'); selIso = t.iso;
+        if (bkForm) bkForm.hidden = false;
+        refreshConfirm();
       });
       slotsWrap.appendChild(s);
     });
-    confirmBtn.addEventListener('click', function () {
-      if (confirmBtn.disabled) return;
-      bkDoneText.textContent = 'Ihr Wunschtermin am ' + selDay + ' um ' + selSlot + ' Uhr ist reserviert. Sabrina meldet sich zur Bestätigung.';
-      bkPicker.style.display = 'none';
-      bkDone.classList.add('show');
+    if (bkForm) bkForm.hidden = true;
+    refreshConfirm();
+  }
+  function renderDays(days) {
+    daysWrap.innerHTML = '';
+    days.forEach(function (day, i) {
+      var btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'day' + (i === 0 ? ' sel' : '');
+      btn.innerHTML = '<div class="dn">' + day.dayLabel + '</div><div class="dd">' + day.dateLabel + '</div>';
+      btn.addEventListener('click', function () {
+        daysWrap.querySelectorAll('.day').forEach(function (x) { x.classList.remove('sel'); });
+        btn.classList.add('sel');
+        renderSlots(day.times);
+      });
+      daysWrap.appendChild(btn);
     });
+    if (days.length) renderSlots(days[0].times);
+  }
+  function loadSlots() {
+    fetch(BOOKING_ENDPOINT + (BOOKING_ENDPOINT.indexOf('?') > -1 ? '&' : '?') + 'action=slots')
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res || !res.ok || !res.slots || !res.slots.length) { bkShowFallback(); return; }
+        if (bkLoading) bkLoading.style.display = 'none';
+        if (bkSteps) bkSteps.hidden = false;
+        renderDays(res.slots);
+      })
+      .catch(function () { bkShowFallback(); });
+  }
+  function submitBooking(e) {
+    e.preventDefault();
+    if (confirmBtn.disabled) return;
+    if (bkErr) bkErr.hidden = true;
+    var label = confirmBtn.textContent;
+    confirmBtn.disabled = true; confirmBtn.style.opacity = '.6'; confirmBtn.textContent = 'Wird gebucht …';
+    fetch(BOOKING_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({
+        name: bkName.value.trim(), email: bkEmail.value.trim(),
+        company: bkCompany ? bkCompany.value.trim() : '', iso: selIso
+      })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (res && res.ok) {
+          bkDoneText.innerHTML = 'Ihr Webmeeting ist gebucht: <b>' + (res.when || '') + '</b>.' +
+            (res.meetLink ? ' Den Video-Link finden Sie in der Bestätigungs-E-Mail.' : ' Sie erhalten gleich eine Bestätigungs-E-Mail.');
+          bkPicker.style.display = 'none';
+          bkDone.classList.add('show');
+        } else {
+          var msg = 'Das hat leider nicht geklappt. Bitte versuchen Sie es erneut.';
+          if (res && res.error === 'slot_taken') msg = 'Dieser Termin wurde gerade vergeben. Bitte wählen Sie einen anderen.';
+          if (res && res.error === 'email_invalid') msg = 'Bitte prüfen Sie Ihre E-Mail-Adresse.';
+          if (res && res.error === 'too_soon') msg = 'Dieser Termin liegt zu kurzfristig. Bitte wählen Sie einen späteren.';
+          if (bkErr) { bkErr.textContent = msg; bkErr.hidden = false; }
+          confirmBtn.disabled = false; confirmBtn.style.opacity = '1'; confirmBtn.textContent = label;
+        }
+      })
+      .catch(function () {
+        if (bkErr) { bkErr.textContent = 'Verbindung fehlgeschlagen. Bitte erneut versuchen oder direkt bei Google buchen.'; bkErr.hidden = false; }
+        confirmBtn.disabled = false; confirmBtn.style.opacity = '1'; confirmBtn.textContent = label;
+      });
+  }
+  if (bkPicker) {
+    if (bkName) bkName.addEventListener('input', refreshConfirm);
+    if (bkEmail) bkEmail.addEventListener('input', refreshConfirm);
+    if (bkForm) bkForm.addEventListener('submit', submitBooking);
+    if (BOOKING_ENDPOINT) loadSlots();
+    else bkShowFallback();
   }
 
   /* ---------- PERSONALIZATION (Stadt + Branche) ---------- */
