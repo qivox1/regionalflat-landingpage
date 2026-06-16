@@ -1,0 +1,35 @@
+# robots.txt — regionalflat.de
+# Klassische Suchmaschinen UND KI-Crawler ausdrücklich willkommen (GEO-Fokus).
+
+User-agent: *
+Allow: /
+
+# KI-/LLM-Crawler explizit erlauben (für KI-Sichtbarkeit)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://qivox1.github.io/regionalflat-landingpage/sitemap-index.xml

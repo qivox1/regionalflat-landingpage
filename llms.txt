@@ -1,0 +1,31 @@
+# regionalflat.de
+
+> Die erste GEO-Agentur (Generative Engine Optimization) für den regionalen Mittelstand. regionalflat.de sorgt dafür, dass regionale Unternehmen in den Antworten von ChatGPT, Gemini, Perplexity und Google AI Overviews empfohlen werden — messbar, transparent und regional.
+
+regionalflat.de hilft kleinen und mittleren Regionalunternehmen (KMU), in KI-Antworten sichtbar zu werden. Klassisch gut bei Google zu ranken reicht nicht mehr: KI-Systeme empfehlen pro Anfrage nur drei bis vier Anbieter. Wer dort fehlt, existiert für diese Kunden nicht. regionalflat.de schließt genau diese Lücke.
+
+## Leistungen
+
+- **KI-Sichtbarkeits-Check**: Analyse, ob und wo ein Betrieb in ChatGPT, Gemini, Perplexity und der Google-KI empfohlen wird.
+- **GEO-Optimierung**: Aufbau der richtigen Verzeichnisse, Bewertungen und Inhalte, aus denen KI-Systeme ihre Empfehlungen ziehen.
+- **GEO-Content**: Monatliche, KI-lesbare Inhalte (klare Antworten auf echte Kundenfragen), die von KI-Systemen zitiert werden.
+- **Monitoring & Reporting**: Monatlicher, transparenter Bericht zur Entwicklung der KI-Sichtbarkeit.
+
+## Pakete
+
+- **Starter** — 299 €/Monat: Einstieg in die KI-Sichtbarkeit, 2 GEO-Texte/Monat, quartalsweises Monitoring.
+- **Professional** — 499 €/Monat: 4 GEO-Texte/Monat, monatliches Monitoring, Schema-Markup inklusive.
+- **Premium** — 799 €/Monat: 8 GEO-Texte/Monat, monatliches Monitoring, Schema-Markup, Wikipedia- & Wettbewerbs-Tracking.
+
+Mindestlaufzeit 6 Monate. 15 % Rabatt bei 12-Monats-Vertrag.
+
+## Kernbegriffe
+
+- **GEO (Generative Engine Optimization)**: Optimierung für die Sichtbarkeit in generativen KI-Systemen statt nur für klassische Suchmaschinen.
+- **Mentioned**: Die Marke wird im KI-Antworttext aktiv genannt/empfohlen — die entscheidende Metrik.
+- **Co-Create-Prinzip**: 20+ Jahre regionale Marketing-Erfahrung kombiniert mit der Schnelligkeit der KI.
+
+## Kontakt
+
+- E-Mail: hallo@regionalflat.de
+- Website: https://qivox1.github.io/regionalflat-landingpage/
