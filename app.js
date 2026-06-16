@@ -254,9 +254,8 @@
   }
 
   /* ---------- BOOKING widget (echte Termine via Apps Script) ---------- */
-  // Nach dem Deploy hier die Web-App-URL eintragen (…/exec).
-  // Leer lassen = Fallback auf die Google-Buchungsseite (Button im Widget).
-  var BOOKING_ENDPOINT = '';
+  // Apps-Script Web-App (Sabrina-Kalender). Leer = Fallback auf Google-Buchungsseite.
+  var BOOKING_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwvnKXm5DCFoSVmRWG2BeAklcHOu7TYCAUMADDYBgEtEz8foM0bqL8due35JjZ3PklHwA/exec';
 
   var daysWrap = document.getElementById('days');
   var slotsWrap = document.getElementById('slots');
