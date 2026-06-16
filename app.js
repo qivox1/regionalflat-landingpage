@@ -14,6 +14,23 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* ---------- Mobiles Menü ---------- */
+  var burger = document.getElementById('navBurger');
+  var navMobile = document.getElementById('navMobile');
+  if (burger && navMobile && nav) {
+    function setMenu(open) {
+      nav.classList.toggle('menu-open', open);
+      navMobile.hidden = !open;
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    }
+    burger.addEventListener('click', function () { setMenu(nav.classList.contains('menu-open') ? false : true); });
+    navMobile.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { setMenu(false); });
+    });
+    window.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  }
+
   /* ---------- Reveal on scroll ---------- */
   var revealEls = document.querySelectorAll('.reveal');
   if (prefersReduced || !('IntersectionObserver' in window)) {
@@ -507,5 +524,31 @@
     if (prev) prev.addEventListener('click', function () { go(cur - 1); });
     if (next) next.addEventListener('click', function () { go(cur + 1); });
     go(0);
+  }
+
+  /* ---------- Scroll-Fortschritt + Parallax ---------- */
+  if (!prefersReduced) {
+    var progress = document.createElement('div');
+    progress.className = 'scroll-progress';
+    document.body.appendChild(progress);
+
+    var heroVisual = document.querySelector('.hero-visual');
+    if (heroVisual) heroVisual.classList.add('parallax');
+
+    var ticking = false;
+    function onScrollFx() {
+      var doc = document.documentElement;
+      var max = (doc.scrollHeight - doc.clientHeight) || 1;
+      var p = Math.min(Math.max(window.scrollY / max, 0), 1);
+      progress.style.transform = 'scaleX(' + p + ')';
+      if (heroVisual && window.scrollY < window.innerHeight * 1.2) {
+        heroVisual.style.transform = 'translateY(' + (window.scrollY * 0.07) + 'px)';
+      }
+      ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!ticking) { window.requestAnimationFrame(onScrollFx); ticking = true; }
+    }, { passive: true });
+    onScrollFx();
   }
 })();
