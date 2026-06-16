@@ -108,6 +108,18 @@
     });
   }
 
+  /* ---------- SELBSTTEST: Direkt-Links zu ChatGPT / Perplexity ---------- */
+  function updateAiLinks() {
+    var ct = document.getElementById('copyText');
+    if (!ct) return;
+    var q = encodeURIComponent(ct.textContent.trim().replace(/\s+/g, ' '));
+    var gpt = document.getElementById('openChatgpt');
+    var ppx = document.getElementById('openPerplexity');
+    if (gpt) gpt.href = 'https://chatgpt.com/?q=' + q;
+    if (ppx) ppx.href = 'https://www.perplexity.ai/search?q=' + q;
+  }
+  updateAiLinks();
+
   /* ---------- BRANCHEN-SPIEGEL ---------- */
   var branchen = [
     { name: 'Dachdecker',        q: 'Welcher <span class="v">Dachdecker</span> in {STADT} kommt auch kurzfristig?', sub: 'Notfälle &amp; Termindruck — wer zuerst genannt wird, bekommt den Anruf.' },
@@ -217,6 +229,7 @@
   }
   function updatePrompt() {
     if (cpBranche && catChild.value) cpBranche.textContent = catChild.value;
+    updateAiLinks();
   }
   if (catParent && catChild) {
     Object.keys(brancheTree).forEach(function (p) {
@@ -403,6 +416,7 @@
   function syncPersonalization(branche, stadt) {
     document.querySelectorAll('[data-branche]').forEach(function (el) { el.textContent = branche; });
     document.querySelectorAll('[data-stadt]').forEach(function (el) { el.textContent = stadt; });
+    updateAiLinks();
   }
   // expose so tweaks can call it
   window.__rfSync = syncPersonalization;
