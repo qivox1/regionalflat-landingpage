@@ -42,6 +42,17 @@
       });
     }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
     revealEls.forEach(function (el) { io.observe(el); });
+    // Sicherheitsnetz: alles, was beim Laden bereits im Viewport ist, sofort einblenden
+    function revealInView() {
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      revealEls.forEach(function (el) {
+        if (el.classList.contains('in')) return;
+        var r = el.getBoundingClientRect();
+        if (r.top < vh && r.bottom > 0) { el.classList.add('in'); io.unobserve(el); }
+      });
+    }
+    revealInView();
+    window.addEventListener('load', revealInView);
   }
 
   /* ---------- HERO: typing → reveal recommendations ---------- */
