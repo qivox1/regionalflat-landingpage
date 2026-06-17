@@ -117,13 +117,12 @@
     var q = encodeURIComponent(rfLastQuestion);
     function setHref(id, url) { var el = document.getElementById(id); if (el) el.href = url; }
     setHref('openChatgpt', 'https://chatgpt.com/?q=' + q);
-    setHref('openGemini', 'https://gemini.google.com/app'); // Gemini erlaubt keine vorbefüllte URL → Frage liegt in der Zwischenablage
     setHref('openGoogle', 'https://www.google.com/search?udm=50&q=' + q); // Google AI Mode
     setHref('openPerplexity', 'https://www.perplexity.ai/search?q=' + q);
     setHref('openClaude', 'https://claude.ai/new?q=' + q);
   }
   updateAiLinks();
-  ['openChatgpt', 'openGemini', 'openGoogle', 'openPerplexity', 'openClaude'].forEach(function (id) {
+  ['openChatgpt', 'openGoogle', 'openPerplexity', 'openClaude'].forEach(function (id) {
     var el = document.getElementById(id);
     if (el) el.addEventListener('click', function () {
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -552,6 +551,31 @@
       document.querySelectorAll('[data-web]').forEach(function (el) { el.textContent = host; });
       var pb = document.getElementById('persoBanner');
       if (pb) pb.classList.add('show');
+    }
+
+    /* ---------- HERO: echte Wettbewerber (?w1= &w2= &w3=) + Firmenname (?firma=) ----------
+       Wenn die Mail die drei real recherchierten lokalen Konkurrenten mitgibt, zeigt die
+       Hero-„KI-Antwort" exakt diese Namen — und in der Lücke fehlt der Empfänger selbst. */
+    var pW = [ (params.get('w1') || '').trim(),
+               (params.get('w2') || '').trim(),
+               (params.get('w3') || '').trim() ].filter(Boolean);
+    var pFirma = (params.get('firma') || '').trim();
+    if (pW.length) {
+      var recoItems = document.querySelectorAll('#reco .reco-item');
+      for (var ri = 0; ri < recoItems.length; ri++) {
+        var nameEl = recoItems[ri].querySelector('.rname');
+        if (pW[ri]) {
+          if (nameEl) nameEl.textContent = pW[ri];
+          recoItems[ri].style.display = '';
+        } else {
+          // weniger als 3 echte Treffer → überzählige Zeile ausblenden
+          recoItems[ri].style.display = 'none';
+        }
+      }
+    }
+    if (pFirma) {
+      var gapB = document.querySelector('#reco .reco-gap .gtext b');
+      if (gapB) gapB.textContent = '… und ' + pFirma + '?';
     }
   } catch (e) {}
 
