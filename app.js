@@ -579,6 +579,22 @@
       var gapB = document.querySelector('#reco .reco-gap .gtext b');
       if (gapB) gapB.textContent = '… und ' + pFirma + '?';
     }
+
+    /* ---------- HERO-H1 personalisieren (?ort= + ?firma=) ----------
+       „Die KI empfiehlt in {Ort} drei Firmen – ist {Firma} dabei?"
+       Fallbacks (Best Practice): ohne Ort bleibt die generische H1; bei sehr langem
+       oder fehlendem Firmennamen → „Ihr Betrieb" (Headline bleibt einzeilig/lesbar). */
+    var heroH1 = document.getElementById('heroH1');
+    if (heroH1 && pOrt) {
+      var esc = function (s) {
+        return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      };
+      // Firmennamen für die Headline aufbereiten: Klammer-Zusätze weg, trimmen
+      var hName = (pFirma || '').split('(')[0].replace(/\s+/g, ' ').replace(/[\s,–-]+$/, '').trim();
+      var subjekt = (hName && hName.length <= 30) ? ('ist ' + esc(hName)) : 'ist Ihr Betrieb';
+      heroH1.innerHTML = 'Die KI empfiehlt in ' + esc(pOrt) + ' drei Firmen&nbsp;– ' +
+                         '<span class="hl">' + subjekt + ' dabei?</span>';
+    }
   } catch (e) {}
 
   /* ---------- REFERENZ-SLIDER (Beweis) ---------- */
