@@ -339,10 +339,35 @@
   var bkResend = document.getElementById('bkResend');
   var bkChangeNum = document.getElementById('bkChangeNum');
   var bkVerifyErr = document.getElementById('bkVerifyErr');
+  var bkDaypart = document.getElementById('bkDaypart');
+  var sumType = document.getElementById('sumType');
+  var sumDay = document.getElementById('sumDay');
+  var sumTime = document.getElementById('sumTime');
   var selIso = null;
   var selType = 'meeting';   // 'meeting' | 'call'
+  var selTypeChosen = false; // Schritt 1 erledigt?
+  var selDayIdx = null;      // gewählter Tag-Index
+  var selDayObj = null;      // gewähltes Tag-Objekt (mit times)
+  var selPart = 'am';        // 'am' | 'pm' (Vormittags/Nachmittags)
   var selToken = null;       // OTP-Token vom Backend
   var resendTimer = null;
+  var STEP_ORDER = ['type', 'day', 'time', 'contact'];
+
+  // Stepper: nur der aktuelle Schritt offen, erledigte als Zusammenfassung, spätere ausgeblendet
+  function isStepDone(name) {
+    if (name === 'type') return selTypeChosen;
+    if (name === 'day') return selDayIdx !== null;
+    if (name === 'time') return !!selIso;
+    return false; // contact ist der letzte Schritt
+  }
+  function openStep(name) {
+    STEP_ORDER.forEach(function (n) {
+      var el = document.getElementById('step-' + n);
+      if (!el) return;
+      el.classList.toggle('open', n === name);
+      el.classList.toggle('done', n !== name && isStepDone(n));
+    });
+  }
 
   function bkShowFallback() {
     if (bkLoading) bkLoading.style.display = 'none';
@@ -363,9 +388,12 @@
     confirmBtn.style.opacity = ok ? '1' : '.5';
     confirmBtn.style.cursor = ok ? 'pointer' : 'not-allowed';
   }
-  // Auswahl Webmeeting / Telefonat (ganz oben, vor der Tageswahl)
+  var daysData = [];
+
+  // Schritt 1: Auswahl Webmeeting / Telefonat
   function setBookingType(t) {
     selType = (t === 'call') ? 'call' : 'meeting';
+    selTypeChosen = true;
     if (bkType) {
       bkType.querySelectorAll('.bk-type-opt').forEach(function (o) {
         var on = o.dataset.type === selType;
@@ -378,47 +406,92 @@
       bkPhone.required = (selType === 'call');
       if (selType !== 'call') bkPhone.value = '';
     }
+    if (sumType) sumType.textContent = (selType === 'call') ? 'Telefonat' : 'Webmeeting';
+    openStep('day');
     refreshConfirm();
   }
-  function renderSlots(times) {
-    slotsWrap.innerHTML = ''; selIso = null;
-    times.forEach(function (t) {
-      var s = document.createElement('button');
-      s.type = 'button'; s.className = 'slot'; s.textContent = t.hm;
-      s.addEventListener('click', function () {
-        slotsWrap.querySelectorAll('.slot').forEach(function (x) { x.classList.remove('sel'); });
-        s.classList.add('sel'); selIso = t.iso;
-        if (bkForm) bkForm.hidden = false;
-        refreshConfirm();
-      });
-      slotsWrap.appendChild(s);
-    });
-    if (bkForm) bkForm.hidden = true;
-    refreshConfirm();
-  }
+
+  // Schritt 2: Tag wählen
   function renderDays(days) {
     daysWrap.innerHTML = '';
     days.forEach(function (day, i) {
       var btn = document.createElement('button');
-      btn.type = 'button'; btn.className = 'day' + (i === 0 ? ' sel' : '');
+      btn.type = 'button'; btn.className = 'day';
       btn.innerHTML = '<div class="dn">' + day.dayLabel + '</div><div class="dd">' + day.dateLabel + '</div>';
-      btn.addEventListener('click', function () {
-        daysWrap.querySelectorAll('.day').forEach(function (x) { x.classList.remove('sel'); });
-        btn.classList.add('sel');
-        renderSlots(day.times);
-      });
+      btn.addEventListener('click', function () { selectDay(i); });
       daysWrap.appendChild(btn);
     });
-    if (days.length) renderSlots(days[0].times);
+  }
+  function selectDay(idx) {
+    selDayIdx = idx; selDayObj = daysData[idx]; selIso = null;
+    daysWrap.querySelectorAll('.day').forEach(function (x, i) { x.classList.toggle('sel', i === idx); });
+    if (sumDay) sumDay.textContent = selDayObj.dayLabel + ', ' + selDayObj.dateLabel;
+    if (sumTime) sumTime.textContent = '';
+    setupDayparts(selDayObj.times);
+    openStep('time');
+    refreshConfirm();
+  }
+
+  // Schritt 3: Uhrzeit (mit Vormittags/Nachmittags)
+  function setupDayparts(times) {
+    var am = times.filter(function (t) { return parseInt(t.hm, 10) < 12; });
+    var pm = times.filter(function (t) { return parseInt(t.hm, 10) >= 12; });
+    if (bkDaypart) bkDaypart.hidden = !(am.length && pm.length);
+    selPart = am.length ? 'am' : 'pm';
+    if (bkDaypart) bkDaypart.querySelectorAll('.bk-daypart-opt').forEach(function (o) {
+      o.classList.toggle('sel', o.dataset.part === selPart);
+    });
+    renderSlots();
+  }
+  function renderSlots() {
+    if (!selDayObj) return;
+    var times = selDayObj.times.filter(function (t) {
+      var h = parseInt(t.hm, 10);
+      return selPart === 'am' ? h < 12 : h >= 12;
+    });
+    slotsWrap.innerHTML = '';
+    times.forEach(function (t) {
+      var s = document.createElement('button');
+      s.type = 'button'; s.className = 'slot' + (t.iso === selIso ? ' sel' : ''); s.textContent = t.hm;
+      s.addEventListener('click', function () {
+        selIso = t.iso;
+        slotsWrap.querySelectorAll('.slot').forEach(function (x) { x.classList.remove('sel'); });
+        s.classList.add('sel');
+        if (sumTime) sumTime.textContent = t.hm + ' Uhr';
+        openStep('contact');
+        refreshConfirm();
+      });
+      slotsWrap.appendChild(s);
+    });
+  }
+  function setDaypart(part) {
+    selPart = (part === 'pm') ? 'pm' : 'am';
+    if (bkDaypart) bkDaypart.querySelectorAll('.bk-daypart-opt').forEach(function (o) {
+      o.classList.toggle('sel', o.dataset.part === selPart);
+    });
+    renderSlots();
+  }
+  // „ändern" auf einem erledigten Schritt: dorthin zurück, spätere Auswahl zurücksetzen
+  function editStep(name) {
+    if (name === 'type') {
+      selDayIdx = null; selDayObj = null; selIso = null;
+      if (sumDay) sumDay.textContent = ''; if (sumTime) sumTime.textContent = '';
+      daysWrap.querySelectorAll('.day').forEach(function (x) { x.classList.remove('sel'); });
+    }
+    if (name === 'day') { selIso = null; if (sumTime) sumTime.textContent = ''; }
+    openStep(name);
+    refreshConfirm();
   }
   function loadSlots() {
     fetch(BOOKING_ENDPOINT + (BOOKING_ENDPOINT.indexOf('?') > -1 ? '&' : '?') + 'action=slots')
       .then(function (r) { return r.json(); })
       .then(function (res) {
         if (!res || !res.ok || !res.slots || !res.slots.length) { bkShowFallback(); return; }
+        daysData = res.slots;
         if (bkLoading) bkLoading.style.display = 'none';
         if (bkSteps) bkSteps.hidden = false;
-        renderDays(res.slots);
+        renderDays(daysData);
+        openStep('type');
       })
       .catch(function () { bkShowFallback(); });
   }
@@ -550,6 +623,7 @@
     if (bkVerifyErr) bkVerifyErr.hidden = true;
     if (bkVerify) bkVerify.hidden = true;
     if (bkSteps) bkSteps.hidden = false;
+    openStep('contact');
     if (bkPhone) bkPhone.focus();
   }
   if (bkPicker) {
@@ -563,6 +637,18 @@
       });
     }
     if (bkForm) bkForm.addEventListener('submit', submitBooking);
+    // Vormittags/Nachmittags
+    if (bkDaypart) bkDaypart.querySelectorAll('.bk-daypart-opt').forEach(function (o) {
+      o.addEventListener('click', function () { setDaypart(o.dataset.part); });
+    });
+    // „ändern" auf einem zusammengeklappten (erledigten) Schritt
+    STEP_ORDER.forEach(function (n) {
+      var head = document.querySelector('#step-' + n + ' .bk-step-head');
+      if (head) head.addEventListener('click', function () {
+        var step = document.getElementById('step-' + n);
+        if (step && step.classList.contains('done')) editStep(n);
+      });
+    });
     // SMS-Verifizierung
     if (bkCode) bkCode.addEventListener('input', function () {
       bkCode.value = bkCode.value.replace(/\D/g, '').slice(0, 6); // nur Ziffern
