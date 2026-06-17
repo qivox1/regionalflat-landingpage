@@ -510,6 +510,7 @@
   try {
     var params = new URLSearchParams(window.location.search);
     var pBranche = (params.get('branche') || '').toLowerCase().trim();
+    var pBereich = (params.get('bereich') || '').trim();
     var pOrt = (params.get('ort') || '').trim();
     var pWeb = (params.get('web') || '').trim();
 
@@ -521,6 +522,24 @@
       if (tree && catParent && catChild) {
         catParent.value = tree[0]; fillChildren(tree[0]);
         catChild.value = tree[1]; updatePrompt();
+      }
+    }
+
+    /* Direkter Bereich-Parameter (?bereich=) — deckt ALLE Selbsttest-Kategorien ab,
+       nicht nur die 16 Hero-Slugs. Wert = exakte Unterkategorie aus brancheTree. */
+    if (pBereich && catParent && catChild) {
+      var want = decode(pBereich).toLowerCase();
+      var foundParent = null, foundChild = null;
+      Object.keys(brancheTree).forEach(function (parent) {
+        brancheTree[parent].forEach(function (child) {
+          if (decode(child).toLowerCase() === want) { foundParent = parent; foundChild = decode(child); }
+        });
+      });
+      if (foundParent) {
+        catParent.value = foundParent; fillChildren(foundParent);
+        catChild.value = foundChild; updatePrompt();
+        if (cpBranche) cpBranche.textContent = foundChild;
+        syncPersonalization(foundChild, currentStadt);
       }
     }
     if (pOrt && window.__rfSetStadt) {
