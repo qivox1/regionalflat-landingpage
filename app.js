@@ -345,7 +345,8 @@
     return /^\+?[\d\s/()-]{7,20}$/.test(v || '') && digits.length >= 7 && digits.length <= 15;
   }
   function refreshConfirm() {
-    var ok = !!selIso && bkName && bkName.value.trim() && bkEmail && bkEmailOk(bkEmail.value.trim());
+    var ok = !!selIso && bkName && bkName.value.trim() && bkEmail && bkEmailOk(bkEmail.value.trim())
+             && bkCompany && bkCompany.value.trim();
     if (selType === 'call') ok = ok && bkPhone && bkPhoneOk(bkPhone.value.trim());
     if (!confirmBtn) return;
     confirmBtn.disabled = !ok;
@@ -440,6 +441,7 @@
           var msg = 'Das hat leider nicht geklappt. Bitte versuchen Sie es erneut.';
           if (res && res.error === 'slot_taken') msg = 'Dieser Termin wurde gerade vergeben. Bitte wählen Sie einen anderen.';
           if (res && res.error === 'email_invalid') msg = 'Bitte prüfen Sie Ihre E-Mail-Adresse.';
+          if (res && res.error === 'company_missing') msg = 'Bitte geben Sie Ihre Firma an.';
           if (res && res.error === 'phone_invalid') msg = 'Bitte geben Sie eine gültige Handynummer ein.';
           if (res && res.error === 'too_soon') msg = 'Dieser Termin liegt zu kurzfristig. Bitte wählen Sie einen späteren.';
           if (bkErr) { bkErr.textContent = msg; bkErr.hidden = false; }
@@ -454,6 +456,7 @@
   if (bkPicker) {
     if (bkName) bkName.addEventListener('input', refreshConfirm);
     if (bkEmail) bkEmail.addEventListener('input', refreshConfirm);
+    if (bkCompany) bkCompany.addEventListener('input', refreshConfirm);
     if (bkPhone) bkPhone.addEventListener('input', refreshConfirm);
     if (bkType) {
       bkType.querySelectorAll('.bk-type-opt').forEach(function (o) {
