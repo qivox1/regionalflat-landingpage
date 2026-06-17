@@ -513,6 +513,13 @@
     var pOrt = (params.get('ort') || '').trim();
     var pWeb = (params.get('web') || '').trim();
 
+    // Ort ZUERST setzen — sonst überschreibt __rfSetStadt die unten gesetzte Branche
+    if (pOrt && window.__rfSetStadt) {
+      currentStadt = pOrt;
+      if (stadtInput) stadtInput.value = pOrt;
+      window.__rfSetStadt(pOrt);
+    }
+
     if (pBranche && brancheSlugs.indexOf(pBranche) >= 0 && chipWrap) {
       var bi = brancheSlugs.indexOf(pBranche);
       if (chipWrap.children[bi]) chipWrap.children[bi].click();
@@ -540,11 +547,6 @@
         if (cpBranche) cpBranche.textContent = foundChild;
         syncPersonalization(foundChild, currentStadt);
       }
-    }
-    if (pOrt && window.__rfSetStadt) {
-      currentStadt = pOrt;
-      if (stadtInput) stadtInput.value = pOrt;
-      window.__rfSetStadt(pOrt);
     }
     if (pWeb) {
       var host = pWeb.replace(/^https?:\/\//, '').replace(/\/$/, '');
