@@ -60,15 +60,22 @@
   var aiIntro = document.getElementById('aiIntro');
   var recoItems = document.querySelectorAll('#reco .reco-item, #reco .reco-gap');
   var simPlayed = false;
+  // Wird von der URL-Personalisierung gesetzt; sonst „Ihrer Region"
+  var introOrt = '';
+  window.__rfIntroText = function () {
+    return introOrt
+      ? ('Gerne! In ' + introOrt + ' werden besonders häufig empfohlen:')
+      : 'Gerne! In Ihrer Region werden besonders häufig empfohlen:';
+  };
   function playSim() {
     if (simPlayed) return; simPlayed = true;
     if (prefersReduced) {
-      aiIntro.textContent = 'Gerne! In Ihrer Region werden besonders häufig empfohlen:';
+      aiIntro.textContent = window.__rfIntroText();
       recoItems.forEach(function (el) { el.classList.add('show'); });
       return;
     }
     setTimeout(function () {
-      aiIntro.textContent = 'Gerne! In Ihrer Region werden besonders häufig empfohlen:';
+      aiIntro.textContent = window.__rfIntroText();
       recoItems.forEach(function (el, i) {
         setTimeout(function () { el.classList.add('show'); }, 380 + i * 520);
       });
@@ -575,9 +582,22 @@
         }
       }
     }
+    /* Gemeinsamer, gekürzter Anzeige-Name für Box-Lücke UND H1:
+       Klammer-Zusätze/Rechtsform-Reste weg; bei >30 Zeichen Fallback „Ihr Betrieb". */
+    var firmaClean = (pFirma || '').split('(')[0].replace(/\s+/g, ' ').replace(/[\s,–-]+$/, '').trim();
+    var firmaAnzeige = (firmaClean && firmaClean.length <= 30) ? firmaClean : 'Ihr Betrieb';
+
     if (pFirma) {
       var gapB = document.querySelector('#reco .reco-gap .gtext b');
-      if (gapB) gapB.textContent = '… und ' + pFirma + '?';
+      if (gapB) gapB.textContent = '… und ' + firmaAnzeige + '?';
+    }
+
+    /* aiIntro mit Ort personalisieren („In {Ort} …" statt „In Ihrer Region …") */
+    if (pOrt) {
+      introOrt = pOrt;
+      if (aiIntro && /empfohlen/.test(aiIntro.textContent || '')) {
+        aiIntro.textContent = window.__rfIntroText();
+      }
     }
 
     /* ---------- HERO-H1 personalisieren (?ort= + ?firma=) ----------
@@ -589,11 +609,8 @@
       var esc = function (s) {
         return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       };
-      // Firmennamen für die Headline aufbereiten: Klammer-Zusätze weg, trimmen
-      var hName = (pFirma || '').split('(')[0].replace(/\s+/g, ' ').replace(/[\s,–-]+$/, '').trim();
-      var subjekt = (hName && hName.length <= 30) ? ('ist ' + esc(hName)) : 'ist Ihr Betrieb';
       heroH1.innerHTML = 'Die KI empfiehlt in ' + esc(pOrt) + ' drei Firmen&nbsp;– ' +
-                         '<span class="hl">' + subjekt + ' dabei?</span>';
+                         '<span class="hl">ist ' + esc(firmaAnzeige) + ' dabei?</span>';
     }
   } catch (e) {}
 
