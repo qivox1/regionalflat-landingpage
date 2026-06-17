@@ -331,8 +331,18 @@
   var bkFallback = document.getElementById('bkFallback');
   var bkDone = document.getElementById('bkDone');
   var bkDoneText = document.getElementById('bkDoneText');
+  // SMS-Verifizierung
+  var bkVerify = document.getElementById('bkVerify');
+  var bkVerifyNum = document.getElementById('bkVerifyNum');
+  var bkCode = document.getElementById('bkCode');
+  var verifyBtn = document.getElementById('verifyBtn');
+  var bkResend = document.getElementById('bkResend');
+  var bkChangeNum = document.getElementById('bkChangeNum');
+  var bkVerifyErr = document.getElementById('bkVerifyErr');
   var selIso = null;
   var selType = 'meeting';   // 'meeting' | 'call'
+  var selToken = null;       // OTP-Token vom Backend
+  var resendTimer = null;
 
   function bkShowFallback() {
     if (bkLoading) bkLoading.style.display = 'none';
@@ -412,19 +422,80 @@
       })
       .catch(function () { bkShowFallback(); });
   }
+  function bkErrorMsg(err) {
+    switch (err) {
+      case 'slot_taken':       return 'Dieser Termin wurde gerade vergeben. Bitte wählen Sie einen anderen.';
+      case 'email_invalid':    return 'Bitte prüfen Sie Ihre E-Mail-Adresse.';
+      case 'company_missing':  return 'Bitte geben Sie Ihre Firma an.';
+      case 'phone_invalid':    return 'Bitte geben Sie eine gültige Handynummer ein.';
+      case 'too_soon':         return 'Dieser Termin liegt zu kurzfristig. Bitte wählen Sie einen späteren.';
+      case 'too_many_codes':   return 'Zu viele SMS-Anfragen für diese Nummer. Bitte später erneut versuchen.';
+      case 'sms_not_configured': return 'SMS-Versand ist derzeit nicht möglich. Bitte wählen Sie ein Webmeeting.';
+      case 'sms_send_failed':  return 'Die SMS konnte nicht gesendet werden. Bitte Nummer prüfen oder erneut versuchen.';
+      case 'code_missing':     return 'Bitte geben Sie den Code aus der SMS ein.';
+      case 'code_invalid':     return 'Der Code stimmt nicht. Bitte erneut eingeben.';
+      case 'code_expired':     return 'Der Code ist abgelaufen. Bitte fordern Sie einen neuen an.';
+      case 'code_attempts':    return 'Zu viele Fehlversuche. Bitte fordern Sie einen neuen Code an.';
+      default:                 return 'Das hat leider nicht geklappt. Bitte versuchen Sie es erneut.';
+    }
+  }
+  function setBtn(btn, busy, busyText, idleText) {
+    if (!btn) return;
+    btn.disabled = busy;
+    btn.style.opacity = busy ? '.6' : '1';
+    btn.textContent = busy ? busyText : idleText;
+  }
+
+  // Webmeeting -> direkt buchen; Telefonat -> erst SMS-Code anfordern
   function submitBooking(e) {
     e.preventDefault();
     if (confirmBtn.disabled) return;
     if (bkErr) bkErr.hidden = true;
-    var label = confirmBtn.textContent;
-    confirmBtn.disabled = true; confirmBtn.style.opacity = '.6'; confirmBtn.textContent = 'Wird gebucht …';
+    if (selType === 'call') requestCode();
+    else doBook(false);
+  }
+
+  function requestCode() {
+    setBtn(confirmBtn, true, 'Code wird gesendet …', '');
     fetch(BOOKING_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ action: 'send_code', phone: bkPhone ? bkPhone.value.trim() : '' })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        setBtn(confirmBtn, false, '', 'Termin verbindlich buchen');
+        if (res && res.ok) {
+          selToken = res.token;
+          if (bkVerifyNum) bkVerifyNum.textContent = res.phone || (bkPhone ? bkPhone.value.trim() : '');
+          if (bkSteps) bkSteps.hidden = true;
+          if (bkVerify) bkVerify.hidden = false;
+          if (bkVerifyErr) bkVerifyErr.hidden = true;
+          if (bkCode) { bkCode.value = ''; bkCode.focus(); }
+          refreshVerifyBtn();
+          startResendCooldown(60);
+        } else if (bkErr) {
+          bkErr.textContent = bkErrorMsg(res && res.error); bkErr.hidden = false;
+        }
+      })
+      .catch(function () {
+        setBtn(confirmBtn, false, '', 'Termin verbindlich buchen');
+        if (bkErr) { bkErr.textContent = 'Verbindung fehlgeschlagen. Bitte erneut versuchen.'; bkErr.hidden = false; }
+      });
+  }
+
+  function doBook(fromVerify) {
+    var btn = fromVerify ? verifyBtn : confirmBtn;
+    var errBox = fromVerify ? bkVerifyErr : bkErr;
+    var idle = fromVerify ? 'Bestätigen & Termin buchen' : 'Termin verbindlich buchen';
+    if (errBox) errBox.hidden = true;
+    setBtn(btn, true, 'Wird gebucht …', '');
+    fetch(BOOKING_ENDPOINT, {
+      method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify({
         name: bkName.value.trim(), email: bkEmail.value.trim(),
         company: bkCompany ? bkCompany.value.trim() : '', iso: selIso,
-        type: selType, phone: (selType === 'call' && bkPhone) ? bkPhone.value.trim() : ''
+        type: selType, phone: (selType === 'call' && bkPhone) ? bkPhone.value.trim() : '',
+        token: selToken || '', code: (selType === 'call' && bkCode) ? bkCode.value.trim() : ''
       })
     })
       .then(function (r) { return r.json(); })
@@ -435,23 +506,51 @@
             ? ' Wir rufen Sie pünktlich an. Den Termin finden Sie in der Bestätigungs-E-Mail.'
             : (res.meetLink ? ' Den Video-Link finden Sie in der Bestätigungs-E-Mail.' : ' Sie erhalten gleich eine Bestätigungs-E-Mail.');
           bkDoneText.innerHTML = 'Ihr ' + artLabel + ' ist gebucht: <b>' + (res.when || '') + '</b>.' + nachsatz;
+          if (resendTimer) { clearInterval(resendTimer); resendTimer = null; }
           bkPicker.style.display = 'none';
           bkDone.classList.add('show');
         } else {
-          var msg = 'Das hat leider nicht geklappt. Bitte versuchen Sie es erneut.';
-          if (res && res.error === 'slot_taken') msg = 'Dieser Termin wurde gerade vergeben. Bitte wählen Sie einen anderen.';
-          if (res && res.error === 'email_invalid') msg = 'Bitte prüfen Sie Ihre E-Mail-Adresse.';
-          if (res && res.error === 'company_missing') msg = 'Bitte geben Sie Ihre Firma an.';
-          if (res && res.error === 'phone_invalid') msg = 'Bitte geben Sie eine gültige Handynummer ein.';
-          if (res && res.error === 'too_soon') msg = 'Dieser Termin liegt zu kurzfristig. Bitte wählen Sie einen späteren.';
-          if (bkErr) { bkErr.textContent = msg; bkErr.hidden = false; }
-          confirmBtn.disabled = false; confirmBtn.style.opacity = '1'; confirmBtn.textContent = label;
+          setBtn(btn, false, '', idle);
+          if (errBox) { errBox.textContent = bkErrorMsg(res && res.error); errBox.hidden = false; }
         }
       })
       .catch(function () {
-        if (bkErr) { bkErr.textContent = 'Verbindung fehlgeschlagen. Bitte erneut versuchen oder direkt bei Google buchen.'; bkErr.hidden = false; }
-        confirmBtn.disabled = false; confirmBtn.style.opacity = '1'; confirmBtn.textContent = label;
+        setBtn(btn, false, '', idle);
+        if (errBox) { errBox.textContent = 'Verbindung fehlgeschlagen. Bitte erneut versuchen.'; errBox.hidden = false; }
       });
+  }
+
+  function refreshVerifyBtn() {
+    if (!verifyBtn) return;
+    var ok = bkCode && /^\d{6}$/.test(bkCode.value.trim());
+    verifyBtn.disabled = !ok;
+    verifyBtn.style.opacity = ok ? '1' : '.5';
+    verifyBtn.style.cursor = ok ? 'pointer' : 'not-allowed';
+  }
+  function startResendCooldown(sec) {
+    if (!bkResend) return;
+    if (resendTimer) clearInterval(resendTimer);
+    var left = sec;
+    bkResend.disabled = true;
+    bkResend.textContent = 'Code erneut senden (' + left + ' s)';
+    resendTimer = setInterval(function () {
+      left--;
+      if (left <= 0) {
+        clearInterval(resendTimer); resendTimer = null;
+        bkResend.disabled = false; bkResend.textContent = 'Code erneut senden';
+      } else {
+        bkResend.textContent = 'Code erneut senden (' + left + ' s)';
+      }
+    }, 1000);
+  }
+  function changeNumber() {
+    if (resendTimer) { clearInterval(resendTimer); resendTimer = null; }
+    selToken = null;
+    if (bkCode) bkCode.value = '';
+    if (bkVerifyErr) bkVerifyErr.hidden = true;
+    if (bkVerify) bkVerify.hidden = true;
+    if (bkSteps) bkSteps.hidden = false;
+    if (bkPhone) bkPhone.focus();
   }
   if (bkPicker) {
     if (bkName) bkName.addEventListener('input', refreshConfirm);
@@ -464,6 +563,18 @@
       });
     }
     if (bkForm) bkForm.addEventListener('submit', submitBooking);
+    // SMS-Verifizierung
+    if (bkCode) bkCode.addEventListener('input', function () {
+      bkCode.value = bkCode.value.replace(/\D/g, '').slice(0, 6); // nur Ziffern
+      refreshVerifyBtn();
+    });
+    if (verifyBtn) verifyBtn.addEventListener('click', function () { if (!verifyBtn.disabled) doBook(true); });
+    if (bkResend) bkResend.addEventListener('click', function () {
+      if (bkResend.disabled) return;
+      bkResend.disabled = true; bkResend.textContent = 'Senden …';
+      requestCode();
+    });
+    if (bkChangeNum) bkChangeNum.addEventListener('click', changeNumber);
     if (BOOKING_ENDPOINT) loadSlots();
     else bkShowFallback();
   }
