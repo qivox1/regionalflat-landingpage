@@ -325,11 +325,14 @@
   var bkName = document.getElementById('bkName');
   var bkEmail = document.getElementById('bkEmail');
   var bkCompany = document.getElementById('bkCompany');
+  var bkPhone = document.getElementById('bkPhone');
+  var bkType = document.getElementById('bkType');
   var bkErr = document.getElementById('bkErr');
   var bkFallback = document.getElementById('bkFallback');
   var bkDone = document.getElementById('bkDone');
   var bkDoneText = document.getElementById('bkDoneText');
   var selIso = null;
+  var selType = 'meeting';   // 'meeting' | 'call'
 
   function bkShowFallback() {
     if (bkLoading) bkLoading.style.display = 'none';
@@ -337,12 +340,34 @@
     if (bkFallback) bkFallback.hidden = false;
   }
   function bkEmailOk(v) { return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v); }
+  function bkPhoneOk(v) {
+    var digits = (v || '').replace(/[^\d]/g, '');
+    return /^\+?[\d\s/()-]{7,20}$/.test(v || '') && digits.length >= 7 && digits.length <= 15;
+  }
   function refreshConfirm() {
     var ok = !!selIso && bkName && bkName.value.trim() && bkEmail && bkEmailOk(bkEmail.value.trim());
+    if (selType === 'call') ok = ok && bkPhone && bkPhoneOk(bkPhone.value.trim());
     if (!confirmBtn) return;
     confirmBtn.disabled = !ok;
     confirmBtn.style.opacity = ok ? '1' : '.5';
     confirmBtn.style.cursor = ok ? 'pointer' : 'not-allowed';
+  }
+  // Auswahl Webmeeting / Telefonat (ganz oben, vor der Tageswahl)
+  function setBookingType(t) {
+    selType = (t === 'call') ? 'call' : 'meeting';
+    if (bkType) {
+      bkType.querySelectorAll('.bk-type-opt').forEach(function (o) {
+        var on = o.dataset.type === selType;
+        o.classList.toggle('sel', on);
+        o.setAttribute('aria-checked', on ? 'true' : 'false');
+      });
+    }
+    if (bkPhone) {
+      bkPhone.style.display = (selType === 'call') ? 'block' : 'none';
+      bkPhone.required = (selType === 'call');
+      if (selType !== 'call') bkPhone.value = '';
+    }
+    refreshConfirm();
   }
   function renderSlots(times) {
     slotsWrap.innerHTML = ''; selIso = null;
@@ -397,20 +422,25 @@
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify({
         name: bkName.value.trim(), email: bkEmail.value.trim(),
-        company: bkCompany ? bkCompany.value.trim() : '', iso: selIso
+        company: bkCompany ? bkCompany.value.trim() : '', iso: selIso,
+        type: selType, phone: (selType === 'call' && bkPhone) ? bkPhone.value.trim() : ''
       })
     })
       .then(function (r) { return r.json(); })
       .then(function (res) {
         if (res && res.ok) {
-          bkDoneText.innerHTML = 'Ihr Webmeeting ist gebucht: <b>' + (res.when || '') + '</b>.' +
-            (res.meetLink ? ' Den Video-Link finden Sie in der Bestätigungs-E-Mail.' : ' Sie erhalten gleich eine Bestätigungs-E-Mail.');
+          var artLabel = (res.type === 'call') ? 'Telefontermin' : 'Webmeeting';
+          var nachsatz = (res.type === 'call')
+            ? ' Wir rufen Sie pünktlich an. Den Termin finden Sie in der Bestätigungs-E-Mail.'
+            : (res.meetLink ? ' Den Video-Link finden Sie in der Bestätigungs-E-Mail.' : ' Sie erhalten gleich eine Bestätigungs-E-Mail.');
+          bkDoneText.innerHTML = 'Ihr ' + artLabel + ' ist gebucht: <b>' + (res.when || '') + '</b>.' + nachsatz;
           bkPicker.style.display = 'none';
           bkDone.classList.add('show');
         } else {
           var msg = 'Das hat leider nicht geklappt. Bitte versuchen Sie es erneut.';
           if (res && res.error === 'slot_taken') msg = 'Dieser Termin wurde gerade vergeben. Bitte wählen Sie einen anderen.';
           if (res && res.error === 'email_invalid') msg = 'Bitte prüfen Sie Ihre E-Mail-Adresse.';
+          if (res && res.error === 'phone_invalid') msg = 'Bitte geben Sie eine gültige Handynummer ein.';
           if (res && res.error === 'too_soon') msg = 'Dieser Termin liegt zu kurzfristig. Bitte wählen Sie einen späteren.';
           if (bkErr) { bkErr.textContent = msg; bkErr.hidden = false; }
           confirmBtn.disabled = false; confirmBtn.style.opacity = '1'; confirmBtn.textContent = label;
@@ -424,6 +454,12 @@
   if (bkPicker) {
     if (bkName) bkName.addEventListener('input', refreshConfirm);
     if (bkEmail) bkEmail.addEventListener('input', refreshConfirm);
+    if (bkPhone) bkPhone.addEventListener('input', refreshConfirm);
+    if (bkType) {
+      bkType.querySelectorAll('.bk-type-opt').forEach(function (o) {
+        o.addEventListener('click', function () { setBookingType(o.dataset.type); });
+      });
+    }
     if (bkForm) bkForm.addEventListener('submit', submitBooking);
     if (BOOKING_ENDPOINT) loadSlots();
     else bkShowFallback();
