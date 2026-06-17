@@ -60,11 +60,10 @@
   var aiIntro = document.getElementById('aiIntro');
   var recoItems = document.querySelectorAll('#reco .reco-item, #reco .reco-gap');
   var simPlayed = false;
-  // Wird von der URL-Personalisierung gesetzt; sonst „Ihrer Region"
-  var introOrt = '';
+  // window.__rfIntroOrt wird von der URL-Personalisierung gesetzt; sonst „Ihrer Region"
   window.__rfIntroText = function () {
-    return introOrt
-      ? ('Gerne! In ' + introOrt + ' werden besonders häufig empfohlen:')
+    return window.__rfIntroOrt
+      ? ('Gerne! In ' + window.__rfIntroOrt + ' werden besonders häufig empfohlen:')
       : 'Gerne! In Ihrer Region werden besonders häufig empfohlen:';
   };
   function playSim() {
@@ -594,9 +593,10 @@
 
     /* aiIntro mit Ort personalisieren („In {Ort} …" statt „In Ihrer Region …") */
     if (pOrt) {
-      introOrt = pOrt;
-      if (aiIntro && /empfohlen/.test(aiIntro.textContent || '')) {
-        aiIntro.textContent = window.__rfIntroText();
+      window.__rfIntroOrt = pOrt;
+      var aiIntroEl = document.getElementById('aiIntro');
+      if (aiIntroEl && /empfohlen/.test(aiIntroEl.textContent || '')) {
+        aiIntroEl.textContent = window.__rfIntroText();
       }
     }
 
