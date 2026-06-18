@@ -32,4 +32,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://qivox1.github.io/regionalflat-landingpage/sitemap-index.xml
+Sitemap: https://regionalflat.de/sitemap-index.xml
