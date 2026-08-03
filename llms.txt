@@ -4,28 +4,42 @@
 
 regionalflat.de hilft kleinen und mittleren Regionalunternehmen (KMU), in KI-Antworten sichtbar zu werden. Klassisch gut bei Google zu ranken reicht nicht mehr: KI-Systeme empfehlen pro Anfrage nur drei bis vier Anbieter. Wer dort fehlt, existiert für diese Kunden nicht. regionalflat.de schließt genau diese Lücke.
 
+## Seiten
+
+- [Startseite](https://regionalflat.de/): Leistungen, KI-Sichtbarkeits-Check, Pakete, Referenzen und Terminbuchung.
+- [Über uns](https://regionalflat.de/ueber-uns/): Mission, Gründerin Anja Miebach, Arbeitsweise und Erfahrung.
+- [Kontakt](https://regionalflat.de/kontakt/): Telefon, E-Mail, Erreichbarkeit und kostenloser 15-Minuten-Termin.
+- [Impulse (Blog)](https://regionalflat.de/impulse/): Fachartikel zu GEO, AEO und KI-Sichtbarkeit für regionale Betriebe.
+- [Impressum](https://regionalflat.de/impressum/): Anbieterangaben nach § 5 TMG.
+- [Datenschutzerklärung](https://regionalflat.de/datenschutz/): Verarbeitungszwecke, Betroffenenrechte und Liste der Sub-Prozessoren.
+- [AGB](https://regionalflat.de/agb/): Vertragsbedingungen der Flatrates.
+- [Sitemap](https://regionalflat.de/sitemap-index.xml): Vollständiges URL-Verzeichnis.
+
 ## Leistungen
 
-- **KI-Sichtbarkeits-Check**: Analyse, ob und wo ein Betrieb in ChatGPT, Gemini, Perplexity und der Google-KI empfohlen wird.
-- **GEO-Optimierung**: Aufbau der richtigen Verzeichnisse, Bewertungen und Inhalte, aus denen KI-Systeme ihre Empfehlungen ziehen.
-- **GEO-Content**: Monatliche, KI-lesbare Inhalte (klare Antworten auf echte Kundenfragen), die von KI-Systemen zitiert werden.
-- **Monitoring & Reporting**: Monatlicher, transparenter Bericht zur Entwicklung der KI-Sichtbarkeit.
+- [KI-Sichtbarkeits-Check](https://regionalflat.de/#check): Analyse, ob und wo ein Betrieb in ChatGPT, Gemini, Perplexity und der Google-KI empfohlen wird.
+- [SEO, AEO & GEO](https://regionalflat.de/#geo-aio): Aufbau der richtigen Verzeichnisse, Bewertungen und Inhalte, aus denen KI-Systeme ihre Empfehlungen ziehen.
+- [GEO-Content](https://regionalflat.de/#loesung): Monatliche, KI-lesbare Inhalte (klare Antworten auf echte Kundenfragen), die von KI-Systemen zitiert werden.
+- [Monitoring & Reporting](https://regionalflat.de/#pakete): Transparenter Bericht zur Entwicklung der KI-Sichtbarkeit.
 
 ## Pakete
 
-- **Starter** — 299 €/Monat: Einstieg in die KI-Sichtbarkeit, 2 GEO-Texte/Monat, quartalsweises Monitoring.
-- **Professional** — 499 €/Monat: 4 GEO-Texte/Monat, monatliches Monitoring, Schema-Markup inklusive.
-- **Premium** — 799 €/Monat: 8 GEO-Texte/Monat, monatliches Monitoring, Schema-Markup, Wikipedia- & Wettbewerbs-Tracking.
+Alle Preise pro Monat, Mindestlaufzeit 6 Monate. Sichtbarkeits-Versprechen: Bewegt sich nach 90 Tagen nichts, ist der Rest der Laufzeit kostenlos. Details unter [Flatrates & Preise](https://regionalflat.de/#pakete).
 
-Mindestlaufzeit 6 Monate. 15 % Rabatt bei 12-Monats-Vertrag.
+- **Starter — 299 €/Monat**: KI-Sichtbarkeits-Check als Basis, 15 Profile & Brancheneinträge, 2 KI-Texte pro Monat, Starthilfe beim Bewertungs-Management.
+- **Professional — 499 €/Monat**: KI-Sichtbarkeits-Check als Basis, 40 Profile & Brancheneinträge, 4 KI-Texte pro Monat, aktives Bewertungs-Management.
+- **Premium — 799 €/Monat**: KI-Sichtbarkeits-Check als Basis, 60+ Profile & Brancheneinträge, 8 KI-Texte pro Monat, aktives Bewertungs-Management, zusätzlich Presse, Videos, Wissensdatenbanken und Wettbewerbs-Beobachtung.
 
 ## Kernbegriffe
 
-- **GEO (Generative Engine Optimization)**: Optimierung für die Sichtbarkeit in generativen KI-Systemen statt nur für klassische Suchmaschinen.
-- **Mentioned**: Die Marke wird im KI-Antworttext aktiv genannt/empfohlen — die entscheidende Metrik.
-- **Co-Create-Prinzip**: 20+ Jahre regionale Marketing-Erfahrung kombiniert mit der Schnelligkeit der KI.
+- **GEO (Generative Engine Optimization)**: Optimierung für die Sichtbarkeit in generativen KI-Systemen statt nur für klassische Suchmaschinen. Einführung: [Platz 1 bei Google, unsichtbar in ChatGPT](https://regionalflat.de/impulse/platz-1-bei-google-unsichtbar-in-chatgpt-warum-seo-nicht-mehr-reicht/).
+- **AEO (Answer Engine Optimization)**: Optimierung darauf, in Antwortboxen wie der Google-KI-Übersicht zitiert zu werden. Siehe [Google KI-Übersicht & AEO](https://regionalflat.de/impulse/google-ki-uebersicht-aeo-so-wird-dein-betrieb-zitiert/).
+- **Mentioned**: Die Marke wird im KI-Antworttext aktiv genannt oder empfohlen — die entscheidende Metrik. Hintergrund: [Warum empfiehlt die KI deinen Konkurrenten?](https://regionalflat.de/impulse/warum-empfiehlt-die-ki-deinen-konkurrenten-und-nicht-dich/).
+- **Selbsttest**: In 15 Minuten prüfen, ob die KI den eigenen Betrieb nennt — [Anleitung](https://regionalflat.de/impulse/so-testest-du-deine-ki-sichtbarkeit-in-15-minuten/).
 
 ## Kontakt
 
-- E-Mail: hallo@regionalflat.de
-- Website: https://regionalflat.de/
+- E-Mail: [hi@regionalflat.de](mailto:hi@regionalflat.de)
+- Telefon: [+49 151 53 40 69 69](tel:+4915153406969)
+- Website: [https://regionalflat.de/](https://regionalflat.de/)
+- Anbieter: regionalflat® — eine Marke der AMP Beratung, Langer Weg 7b, 33332 Gütersloh, Deutschland
