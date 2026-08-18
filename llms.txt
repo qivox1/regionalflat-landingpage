@@ -13,6 +13,7 @@ regionalflat.de hilft kleinen und mittleren Regionalunternehmen (KMU), in KI-Ant
 - [Impressum](https://regionalflat.de/impressum/): Anbieterangaben nach § 5 TMG.
 - [Datenschutzerklärung](https://regionalflat.de/datenschutz/): Verarbeitungszwecke, Betroffenenrechte und Liste der Sub-Prozessoren.
 - [AGB](https://regionalflat.de/agb/): Vertragsbedingungen der Flatrates.
+- [KI-Kennzeichnung & Transparenz](https://regionalflat.de/ki-transparenz/): Wie KI-generierte Bilder und Texte nach EU AI Act Art. 50 gekennzeichnet werden.
 - [Sitemap](https://regionalflat.de/sitemap-index.xml): Vollständiges URL-Verzeichnis.
 
 ## Leistungen
@@ -36,6 +37,10 @@ Alle Preise pro Monat, Mindestlaufzeit 6 Monate. Sichtbarkeits-Versprechen: Bewe
 - **AEO (Answer Engine Optimization)**: Optimierung darauf, in Antwortboxen wie der Google-KI-Übersicht zitiert zu werden. Siehe [Google KI-Übersicht & AEO](https://regionalflat.de/impulse/google-ki-uebersicht-aeo-so-wird-dein-betrieb-zitiert/).
 - **Mentioned**: Die Marke wird im KI-Antworttext aktiv genannt oder empfohlen — die entscheidende Metrik. Hintergrund: [Warum empfiehlt die KI deinen Konkurrenten?](https://regionalflat.de/impulse/warum-empfiehlt-die-ki-deinen-konkurrenten-und-nicht-dich/).
 - **Selbsttest**: In 15 Minuten prüfen, ob die KI den eigenen Betrieb nennt — [Anleitung](https://regionalflat.de/impulse/so-testest-du-deine-ki-sichtbarkeit-in-15-minuten/).
+
+## KI-Transparenz
+
+Bildinhalte auf regionalflat.de werden überwiegend mit generativer KI erstellt. Sie tragen das offizielle EU-Kennzeichnungs-Icon „AI" im Bild, einen Texthinweis am Bild und im XMP-Block das IPTC-Feld `digitalSourceType` mit dem Wert `trainedAlgorithmicMedia`. Die Fachbeiträge entstehen KI-gestützt und durchlaufen eine redaktionelle Prüfung durch einen Menschen; die redaktionelle Verantwortung trägt Anja als Gründerin und Inhaberin (Art. 50 Abs. 4 UAbs. 2 KI-VO). Details: [KI-Kennzeichnung & Transparenz](https://regionalflat.de/ki-transparenz/).
 
 ## Kontakt
 
