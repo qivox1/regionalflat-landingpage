@@ -2,7 +2,7 @@
 
 > Analytics zeigt fast nichts, die Search Console keine Klicks – so messen Sie als regionaler Betrieb trotzdem sauber, ob die KI Sie öfter empfiehlt.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 21. September 2026 · **Lesezeit:** 12 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 21. September 2026 · **Lesezeit:** 12 Min.
 **Quelle:** https://regionalflat.de/impulse/ki-sichtbarkeit-messen-woran-du-erkennst-dass-geo-wirkt/
 
 ---

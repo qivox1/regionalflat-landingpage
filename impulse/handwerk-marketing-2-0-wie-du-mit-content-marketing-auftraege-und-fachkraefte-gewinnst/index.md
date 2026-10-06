@@ -2,7 +2,7 @@
 
 > 90.000 fehlende Fachkräfte im Handwerk: Wie Sie mit Karriereseite, Google-Profil und Fachseiten Aufträge gewinnen und Mitarbeiter finden.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 27. November 2025 · **Lesezeit:** 6 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 27. November 2025 · **Lesezeit:** 6 Min.
 **Quelle:** https://regionalflat.de/impulse/handwerk-marketing-2-0-wie-du-mit-content-marketing-auftraege-und-fachkraefte-gewinnst/
 
 ---

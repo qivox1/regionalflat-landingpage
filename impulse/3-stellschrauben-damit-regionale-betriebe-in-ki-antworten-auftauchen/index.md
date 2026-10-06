@@ -2,7 +2,7 @@
 
 > Technik, Content, Autorität: Mit diesen drei Hebeln tauchen regionale Betriebe in ChatGPT, Gemini & Co. auf – mit Checklisten, ohne Tech-Studium.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 08. Juni 2026 · **Lesezeit:** 10 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 08. Juni 2026 · **Lesezeit:** 10 Min.
 **Quelle:** https://regionalflat.de/impulse/3-stellschrauben-damit-regionale-betriebe-in-ki-antworten-auftauchen/
 
 ---

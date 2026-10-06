@@ -2,7 +2,7 @@
 
 > Local SEO für kleine Betriebe: 80 % der Konsumenten suchen online nach lokalen Unternehmen. So werden Sie in Ihrer Region gefunden.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 17. Dezember 2025 · **Lesezeit:** 7 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 17. Dezember 2025 · **Lesezeit:** 7 Min.
 **Quelle:** https://regionalflat.de/impulse/local-seo-fuer-kmu-so-wirst-du-in-deiner-region-gefunden/
 
 ---

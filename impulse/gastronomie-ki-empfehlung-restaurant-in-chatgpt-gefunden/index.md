@@ -2,7 +2,7 @@
 
 > Gastronomie ist die Branche Nummer eins bei KI-Empfehlungen – und 83 Prozent der Lokale tauchen dort nie auf. Was wirklich hilft, sichtbar zu werden.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 31. August 2026 · **Lesezeit:** 12 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 31. August 2026 · **Lesezeit:** 12 Min.
 **Quelle:** https://regionalflat.de/impulse/gastronomie-ki-empfehlung-restaurant-in-chatgpt-gefunden/
 
 ---

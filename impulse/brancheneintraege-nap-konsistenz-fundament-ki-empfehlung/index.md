@@ -2,7 +2,7 @@
 
 > ChatGPT & Co. bauen Empfehlungen aus Verzeichnissen. Widersprüchliche Firmendaten kosten Sie die Empfehlung – so bringen Sie Ihre Einträge in Ordnung.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 13. Juli 2026 · **Lesezeit:** 9 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 13. Juli 2026 · **Lesezeit:** 9 Min.
 **Quelle:** https://regionalflat.de/impulse/brancheneintraege-nap-konsistenz-fundament-ki-empfehlung/
 
 ---

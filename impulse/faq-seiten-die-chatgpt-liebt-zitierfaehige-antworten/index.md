@@ -2,7 +2,7 @@
 
 > ChatGPT zitiert keine Websites, sondern einzelne Antworten. So schreiben Sie Kundenfragen auf, dass die KI sie übernimmt – FAQ-Schema allein reicht nicht.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 27. Juli 2026 · **Lesezeit:** 11 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 27. Juli 2026 · **Lesezeit:** 11 Min.
 **Quelle:** https://regionalflat.de/impulse/faq-seiten-die-chatgpt-liebt-zitierfaehige-antworten/
 
 ---

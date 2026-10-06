@@ -2,7 +2,7 @@
 
 > KI empfiehlt bevorzugt Betriebe mit erkennbarem Gesicht. Wie Sie aus einer anonymen Website ein Autorenprofil machen – der günstigste GEO-Hebel.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 03. August 2026 · **Lesezeit:** 12 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 03. August 2026 · **Lesezeit:** 12 Min.
 **Quelle:** https://regionalflat.de/impulse/autoren-ueber-uns-profil-eeat-ki-vertrauen/
 
 ---

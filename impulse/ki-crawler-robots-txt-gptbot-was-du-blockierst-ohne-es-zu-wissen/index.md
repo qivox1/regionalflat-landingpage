@@ -2,7 +2,7 @@
 
 > Ihr Hoster oder eine Cloudflare-Regel kann GPTBot & Co. aussperren, ohne dass Sie es merken. So prüfen Sie in 5 Minuten, wer Ihre Seite lesen darf.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 28. September 2026 · **Lesezeit:** 9 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 28. September 2026 · **Lesezeit:** 9 Min.
 **Quelle:** https://regionalflat.de/impulse/ki-crawler-robots-txt-gptbot-was-du-blockierst-ohne-es-zu-wissen/
 
 ---

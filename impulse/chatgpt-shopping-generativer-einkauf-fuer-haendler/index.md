@@ -2,7 +2,7 @@
 
 > Kunden lassen sich Produkte von der KI empfehlen. Warum kleine Händler dort fehlen und was Sie heute tun können, damit Ihr Sortiment auftaucht.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 10. August 2026 · **Lesezeit:** 12 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 10. August 2026 · **Lesezeit:** 12 Min.
 **Quelle:** https://regionalflat.de/impulse/chatgpt-shopping-generativer-einkauf-fuer-haendler/
 
 ---

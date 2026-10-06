@@ -2,7 +2,7 @@
 
 > ChatGPT und Gemini lesen Ihre Bewertungen wie ein Kunde – nur schneller. Welche Sterne, Frische und Antworten über eine KI-Empfehlung entscheiden.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 20. Juli 2026 · **Lesezeit:** 10 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 20. Juli 2026 · **Lesezeit:** 10 Min.
 **Quelle:** https://regionalflat.de/impulse/google-bewertungen-ki-wie-sterne-zu-empfehlungen-werden/
 
 ---

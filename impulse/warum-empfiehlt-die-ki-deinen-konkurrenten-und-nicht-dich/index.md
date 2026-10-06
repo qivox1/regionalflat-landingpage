@@ -2,7 +2,7 @@
 
 > ChatGPT nennt Ihren Wettbewerber, aber nicht Sie? So wählen KI-Systeme aus, wen sie empfehlen – RAG und E-E-A-T verständlich erklärt.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 01. Juni 2026 · **Lesezeit:** 9 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 01. Juni 2026 · **Lesezeit:** 9 Min.
 **Quelle:** https://regionalflat.de/impulse/warum-empfiehlt-die-ki-deinen-konkurrenten-und-nicht-dich/
 
 ---

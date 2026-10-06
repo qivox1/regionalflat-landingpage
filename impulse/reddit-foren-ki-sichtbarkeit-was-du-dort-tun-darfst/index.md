@@ -2,7 +2,7 @@
 
 > ChatGPT zitiert Reddit und Foren häufiger als fast jede andere Quelle. Was das für regionale Betriebe heißt – und was Sie dort tun dürfen.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 06. Juli 2026 · **Lesezeit:** 9 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 06. Juli 2026 · **Lesezeit:** 9 Min.
 **Quelle:** https://regionalflat.de/impulse/reddit-foren-ki-sichtbarkeit-was-du-dort-tun-darfst/
 
 ---

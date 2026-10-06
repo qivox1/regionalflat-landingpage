@@ -2,7 +2,7 @@
 
 > In 93 % der getesteten Einkäufer-Anfragen tauchten deutsche B2B-Firmen gar nicht auf. Warum Zertifikate nicht davor schützen – und was hilft.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 14. September 2026 · **Lesezeit:** 12 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 14. September 2026 · **Lesezeit:** 12 Min.
 **Quelle:** https://regionalflat.de/impulse/b2b-dienstleister-ki-sichtbarkeit-einkaeufer-recherche/
 
 ---

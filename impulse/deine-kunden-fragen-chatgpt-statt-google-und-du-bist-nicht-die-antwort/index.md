@@ -2,7 +2,7 @@
 
 > Über 80 % der Deutschen nutzen KI zur Informationssuche. Warum Ihr Betrieb in ChatGPT, Gemini & Googles KI auftauchen muss – und wie Sie das schaffen.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 18. Mai 2026 · **Lesezeit:** 9 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 18. Mai 2026 · **Lesezeit:** 9 Min.
 **Quelle:** https://regionalflat.de/impulse/deine-kunden-fragen-chatgpt-statt-google-und-du-bist-nicht-die-antwort/
 
 ---

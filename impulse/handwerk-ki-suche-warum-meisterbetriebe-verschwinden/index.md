@@ -2,7 +2,7 @@
 
 > Kunden fragen die KI nach einem Handwerker und bekommen Portale genannt. Warum Meisterbetriebe unsichtbar bleiben und wie sie zurückkommen.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 17. August 2026 · **Lesezeit:** 12 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 17. August 2026 · **Lesezeit:** 12 Min.
 **Quelle:** https://regionalflat.de/impulse/handwerk-ki-suche-warum-meisterbetriebe-verschwinden/
 
 ---

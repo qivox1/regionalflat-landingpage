@@ -2,7 +2,7 @@
 
 > ChatGPT zeigt Werbung auch in Deutschland. Kaufen Sie sich damit Empfehlungen? Was Anzeigen ändern, was nicht und was regionale Betriebe jetzt tun.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 05. Oktober 2026 · **Lesezeit:** 9 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 05. Oktober 2026 · **Lesezeit:** 9 Min.
 **Quelle:** https://regionalflat.de/impulse/chatgpt-werbung-ki-sichtbarkeit-was-sich-fuer-regionale-betriebe-aendert/
 
 ---

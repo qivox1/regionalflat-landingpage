@@ -2,7 +2,7 @@
 
 > Sie ranken gut bei Google, werden aber in ChatGPT nicht genannt? So unterscheiden sich SEO und GEO – und warum Sie beides brauchen.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 25. Mai 2026 · **Lesezeit:** 8 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 25. Mai 2026 · **Lesezeit:** 8 Min.
 **Quelle:** https://regionalflat.de/impulse/platz-1-bei-google-unsichtbar-in-chatgpt-warum-seo-nicht-mehr-reicht/
 
 ---

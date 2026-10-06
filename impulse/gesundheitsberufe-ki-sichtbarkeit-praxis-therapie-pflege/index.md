@@ -2,7 +2,7 @@
 
 > Bei Gesundheitsfragen gehen KI-Systeme besonders vorsichtig vor. Was das für Praxen, Therapeuten und Pflegedienste bedeutet – und was hilft.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 24. August 2026 · **Lesezeit:** 12 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 24. August 2026 · **Lesezeit:** 12 Min.
 **Quelle:** https://regionalflat.de/impulse/gesundheitsberufe-ki-sichtbarkeit-praxis-therapie-pflege/
 
 ---

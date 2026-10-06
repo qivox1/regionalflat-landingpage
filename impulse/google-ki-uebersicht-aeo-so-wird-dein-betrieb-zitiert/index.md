@@ -2,7 +2,7 @@
 
 > Googles KI-Übersicht beantwortet die Frage, bevor jemand klickt. So sorgen Sie dafür, dass Ihr Betrieb dort zitiert wird (AEO).
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 29. Juni 2026 · **Lesezeit:** 9 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 29. Juni 2026 · **Lesezeit:** 9 Min.
 **Quelle:** https://regionalflat.de/impulse/google-ki-uebersicht-aeo-so-wird-dein-betrieb-zitiert/
 
 ---

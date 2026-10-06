@@ -2,7 +2,7 @@
 
 > Von 149 € bis 2.500 € im Monat – warum GEO-Angebote so weit auseinanderliegen, was im Preis stecken muss und woran Sie ein unseriöses Angebot erkennen.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 07. September 2026 · **Lesezeit:** 12 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 07. September 2026 · **Lesezeit:** 12 Min.
 **Quelle:** https://regionalflat.de/impulse/was-kostet-geo-wirklich-anbieter-check-ki-sichtbarkeit/
 
 ---

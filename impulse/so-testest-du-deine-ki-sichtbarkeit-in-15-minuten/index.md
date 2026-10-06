@@ -2,7 +2,7 @@
 
 > Werden Sie in ChatGPT, Gemini und Perplexity genannt? So prüfen Sie Ihre KI-Sichtbarkeit Schritt für Schritt in 15 Minuten – inkl. Prompt-Vorlagen.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 15. Juni 2026 · **Lesezeit:** 8 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 15. Juni 2026 · **Lesezeit:** 8 Min.
 **Quelle:** https://regionalflat.de/impulse/so-testest-du-deine-ki-sichtbarkeit-in-15-minuten/
 
 ---

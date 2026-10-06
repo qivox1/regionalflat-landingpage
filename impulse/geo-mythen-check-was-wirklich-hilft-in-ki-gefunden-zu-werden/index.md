@@ -2,7 +2,7 @@
 
 > SEO ist tot? GEO wirkt sofort? Wir prüfen die 5 größten GEO-Mythen mit Studien – und zeigen, was regionalen Betrieben wirklich hilft.
 
-**Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 22. Juni 2026 · **Lesezeit:** 9 Min.
+**Autorin:** Anja Miebach (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 22. Juni 2026 · **Lesezeit:** 9 Min.
 **Quelle:** https://regionalflat.de/impulse/geo-mythen-check-was-wirklich-hilft-in-ki-gefunden-zu-werden/
 
 ---
