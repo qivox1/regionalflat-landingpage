@@ -4,9 +4,9 @@ Hinweise für KI-Agenten, Crawler und Coding-Agenten, die diese Website lesen od
 
 ## Über diese Website
 
-regionalflat.de ist die Website von regionalflat: einem Monatspaket für regionale Betriebe in
-Ostwestfalen-Lippe – neue Website mit Hosting und Pflege plus die laufende Arbeit daran, dass Kunden und
-Bewerber den Betrieb bei Google, in Google Maps und in KI wie ChatGPT finden. Pakete ab 299 € im Monat
+regionalflat.de ist die Website von regionalflat: der 360°-Marketing-Flatrate für regionale Betriebe in
+ganz Deutschland – die laufende Arbeit daran, dass Kunden und Bewerber den Betrieb bei Google, in Google
+Maps und in KI wie ChatGPT finden, mit neuer Website, Hosting und Pflege inklusive. Pakete ab 299 € im Monat
 (netto), Website inklusive, 12 Monate Mindestlaufzeit.
 
 - Betreiber: regionalflat – eine Marke der AMP Beratung, Inhaberin Anja Miebach, Langer Weg 7b, 33332 Gütersloh, Deutschland
