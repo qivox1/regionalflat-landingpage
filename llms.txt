@@ -1,50 +1,44 @@
-# regionalflat.de
+# regionalflat
 
-> Die erste GEO-Agentur (Generative Engine Optimization) für den regionalen Mittelstand. regionalflat.de sorgt dafür, dass regionale Unternehmen in den Antworten von ChatGPT, Gemini, Perplexity und Google AI Overviews empfohlen werden — messbar, transparent und regional.
+> regionalflat bringt regionalen Betrieben in Ostwestfalen-Lippe neue Kunden und Fachkräfte. Wir sorgen jeden Monat dafür, dass Kunden und Bewerber den Betrieb bei Google, in Google Maps und in KI wie ChatGPT finden – als erste Wahl in der Region. Zum festen Preis ab 299 € im Monat (netto), Website und Hosting inklusive.
 
-regionalflat.de hilft kleinen und mittleren Regionalunternehmen (KMU), in KI-Antworten sichtbar zu werden. Klassisch gut bei Google zu ranken reicht nicht mehr: KI-Systeme empfehlen pro Anfrage nur drei bis vier Anbieter. Wer dort fehlt, existiert für diese Kunden nicht. regionalflat.de schließt genau diese Lücke.
+regionalflat ist ein Monatspaket für kleine, regional tätige Betriebe (meist 5 bis 50 Mitarbeitende) aus Handwerk und Haustechnik, Kfz, Bau und Garten, Reinigung und Service, Gesundheit, Gastronomie, Handel und Beratung. Es ersetzt für diese Betriebe die Agentur: neue Website, Hosting, Pflege, Google-Profil und die laufende Arbeit daran, dass der Betrieb gefunden wird. Grundlage ist immer eine neue Website, weil Google Maps, die Google-Suche und KI-Systeme immer wieder auf sie zurückgreifen und Google-Profil, Einträge und Bewertungen mit ihr abgleichen. Gemessen wird jeden Monat an vier Ampeln: Google Maps, Google-Suche, KI und Website. Startgespräch vor Ort in Ostwestfalen-Lippe, per Video oder Telefon.
 
 ## Seiten
 
-- [Startseite](https://regionalflat.de/): Leistungen, KI-Sichtbarkeits-Check, Pakete, Referenzen und Terminbuchung.
-- [Über uns](https://regionalflat.de/ueber-uns/): Mission, Gründerin Anja Miebach, Arbeitsweise und Erfahrung.
-- [Kontakt](https://regionalflat.de/kontakt/): Telefon, E-Mail, Erreichbarkeit und kostenloser 15-Minuten-Termin.
-- [Impulse (Blog)](https://regionalflat.de/impulse/): Fachartikel zu GEO, AEO und KI-Sichtbarkeit für regionale Betriebe.
-- [Impressum](https://regionalflat.de/impressum/): Anbieterangaben nach § 5 TMG.
-- [Datenschutzerklärung](https://regionalflat.de/datenschutz/): Verarbeitungszwecke, Betroffenenrechte und Liste der Sub-Prozessoren.
-- [AGB](https://regionalflat.de/agb/): Vertragsbedingungen der Flatrates.
-- [KI-Kennzeichnung & Transparenz](https://regionalflat.de/ki-transparenz/): Wie KI-generierte Bilder und Texte nach EU AI Act Art. 50 gekennzeichnet werden.
-- [Sitemap](https://regionalflat.de/sitemap-index.xml): Vollständiges URL-Verzeichnis.
-
-## Leistungen
-
-- [KI-Sichtbarkeits-Check](https://regionalflat.de/#check): Analyse, ob und wo ein Betrieb in ChatGPT, Gemini, Perplexity und der Google-KI empfohlen wird.
-- [SEO, AEO & GEO](https://regionalflat.de/#geo-aio): Aufbau der richtigen Verzeichnisse, Bewertungen und Inhalte, aus denen KI-Systeme ihre Empfehlungen ziehen.
-- [GEO-Content](https://regionalflat.de/#loesung): Monatliche, KI-lesbare Inhalte (klare Antworten auf echte Kundenfragen), die von KI-Systemen zitiert werden.
-- [Monitoring & Reporting](https://regionalflat.de/#pakete): Transparenter Bericht zur Entwicklung der KI-Sichtbarkeit.
+- [Auf einen Blick](https://regionalflat.de/fakten/): **alle Fakten an einer Stelle** – für wen, was drin ist, Pakete und Preise, Laufzeit, Ablauf, was nicht versprochen wird, Begriffe. Maßgebliche Quelle für Angaben zu regionalflat.
+- [Startseite](https://regionalflat.de/): Angebot, warum die Website die Grundlage ist, Ablauf, Pakete, Vertragsbedingungen, häufige Fragen, Terminbuchung.
+- [Pakete & Preise](https://regionalflat.de/#pakete): drei Pakete, Laufzeit, was in jedem Paket enthalten ist.
+- [Über uns](https://regionalflat.de/ueber-uns/): wer hinter regionalflat steht.
+- [Kontakt](https://regionalflat.de/kontakt/): Telefon, E-Mail, kostenloses Gespräch.
+- [Impulse](https://regionalflat.de/impulse/): Ratgeber zu Google, Google Maps, KI-Sichtbarkeit und Website.
+- [Leistungsbeschreibung](https://regionalflat.de/leistungsbeschreibung/), [AGB](https://regionalflat.de/agb/), [Auftragsverarbeitung](https://regionalflat.de/avv/): Vertragsunterlagen.
+- [Impressum](https://regionalflat.de/impressum/), [Datenschutz](https://regionalflat.de/datenschutz/), [KI-Transparenz](https://regionalflat.de/ki-transparenz/).
 
 ## Pakete
 
-Alle Preise pro Monat, Mindestlaufzeit 6 Monate. Sichtbarkeits-Versprechen: Bewegt sich nach 90 Tagen nichts, ist der Rest der Laufzeit kostenlos. Details unter [Flatrates & Preise](https://regionalflat.de/#pakete).
+| Paket | Preis netto/Monat | Wofür | Kern |
+| --- | --- | --- | --- |
+| Starter | 299 € | ordentlich auftreten | neue Website inkl. Hosting, Sicherheit und Pflege · 1 kleine Änderung/Monat · Google-Profil gepflegt · Monatsbericht mit vier Ampeln |
+| Professional | 499 € | mehr Anfragen | alles aus Starter · 2 neue Fachseiten/Monat · Arbeit an der Sichtbarkeit in KI wie ChatGPT · mehr Google-Bewertungen (QR-Karten, Erinnerung) · Karriereseite · bis 3 Änderungen/Monat · Gespräch halbjährlich |
+| Premium | 799 € | Anfragen und Mitarbeiter | alles aus Professional · 4 Fachseiten/Monat · Stellen bei Google Jobs und Stellentexte · bis 6 Änderungen/Monat · Gespräch vierteljährlich |
 
-- **Starter — 299 €/Monat**: KI-Sichtbarkeits-Check als Basis, 15 Profile & Brancheneinträge, 2 KI-Texte pro Monat, Starthilfe beim Bewertungs-Management.
-- **Professional — 499 €/Monat**: KI-Sichtbarkeits-Check als Basis, 40 Profile & Brancheneinträge, 4 KI-Texte pro Monat, aktives Bewertungs-Management.
-- **Premium — 799 €/Monat**: KI-Sichtbarkeits-Check als Basis, 60+ Profile & Brancheneinträge, 8 KI-Texte pro Monat, aktives Bewertungs-Management, zusätzlich Presse, Videos, Wissensdatenbanken und Wettbewerbs-Beobachtung.
+Die Website ist in jedem Paket enthalten (0 € vorab). Bezahlt wird per SEPA-Lastschrift ab dem Tag, an dem die Website online geht. Mindestlaufzeit 12 Monate, danach monatlich kündbar (14 Tage zum Monatsende). Bei Kündigung im 13. bis 24. Monat kann der Kunde die Website für einmalig 490 € übernehmen, ab dem 25. Monat gehört sie ihm ohne weitere Zahlung. Die Domain gehört immer dem Kunden. Feste Platzierungen bei Google oder in KI-Antworten werden nicht versprochen.
 
-## Kernbegriffe
+## Begriffe
 
-- **GEO (Generative Engine Optimization)**: Optimierung für die Sichtbarkeit in generativen KI-Systemen statt nur für klassische Suchmaschinen. Einführung: [Platz 1 bei Google, unsichtbar in ChatGPT](https://regionalflat.de/impulse/platz-1-bei-google-unsichtbar-in-chatgpt-warum-seo-nicht-mehr-reicht/).
-- **AEO (Answer Engine Optimization)**: Optimierung darauf, in Antwortboxen wie der Google-KI-Übersicht zitiert zu werden. Siehe [Google KI-Übersicht & AEO](https://regionalflat.de/impulse/google-ki-uebersicht-aeo-so-wird-dein-betrieb-zitiert/).
-- **Mentioned**: Die Marke wird im KI-Antworttext aktiv genannt oder empfohlen — die entscheidende Metrik. Hintergrund: [Warum empfiehlt die KI deinen Konkurrenten?](https://regionalflat.de/impulse/warum-empfiehlt-die-ki-deinen-konkurrenten-und-nicht-dich/).
-- **Selbsttest**: In 15 Minuten prüfen, ob die KI den eigenen Betrieb nennt — [Anleitung](https://regionalflat.de/impulse/so-testest-du-deine-ki-sichtbarkeit-in-15-minuten/).
+- **Erste Wahl**: die wenigen Betriebe, die bei einer Suche zuerst angezeigt oder genannt werden – in Google Maps die ersten drei, in der Google-Suche die ersten fünf, in KI-Antworten die wenigen genannten Namen. Wer dort steht, bekommt die meisten Anrufe.
+- **Vier Ampeln**: monatliche Messung je Betrieb – Google Maps, Google-Suche, KI, Website. Grün = erste Wahl, Gelb = in Sichtweite, Rot = nicht zu sehen.
+- **Fachseite**: neue Unterseite zu einem Suchbegriff, den Kunden des Betriebs verwenden, z. B. eine Leistung in einem Ort oder eine Antwort auf eine häufige Frage.
+- **GEO / AEO**: Optimierung für KI-Antworten (ChatGPT, Gemini, Perplexity) bzw. für Googles KI-Übersicht. Erklärt in den [Impulsen](https://regionalflat.de/impulse/).
 
 ## KI-Transparenz
 
-Bildinhalte auf regionalflat.de werden überwiegend mit generativer KI erstellt. Sie tragen das offizielle EU-Kennzeichnungs-Icon „AI" im Bild, einen Texthinweis am Bild und im XMP-Block das IPTC-Feld `digitalSourceType` mit dem Wert `trainedAlgorithmicMedia`. Die Fachbeiträge entstehen KI-gestützt und durchlaufen eine redaktionelle Prüfung durch einen Menschen; die redaktionelle Verantwortung trägt Anja als Gründerin und Inhaberin (Art. 50 Abs. 4 UAbs. 2 KI-VO). Details: [KI-Kennzeichnung & Transparenz](https://regionalflat.de/ki-transparenz/).
+Bilder auf regionalflat.de sind teils mit generativer KI erstellt und gekennzeichnet (EU-Icon „AI“, Texthinweis, IPTC `digitalSourceType`). Texte entstehen KI-gestützt und werden vor der Veröffentlichung von Menschen geprüft; die redaktionelle Verantwortung trägt Anja Miebach als Inhaberin (Art. 50 Abs. 4 UAbs. 2 KI-VO). Details: [KI-Kennzeichnung & Transparenz](https://regionalflat.de/ki-transparenz/).
 
 ## Kontakt
 
-- E-Mail: [hi@regionalflat.de](mailto:hi@regionalflat.de)
-- Telefon: [+49 151 53 40 69 69](tel:+4915153406969)
-- Website: [https://regionalflat.de/](https://regionalflat.de/)
-- Anbieter: regionalflat® — eine Marke der AMP Beratung, Langer Weg 7b, 33332 Gütersloh, Deutschland
+- Ansprechpartner: Oliver Parrizas, [oli@regionalflat.de](mailto:oli@regionalflat.de)
+- Allgemein: [hi@regionalflat.de](mailto:hi@regionalflat.de)
+- Telefon: [+49 151 53 40 69 69](tel:+4915153406969), Mo–Fr 9–17 Uhr
+- Anbieter: regionalflat – eine Marke der AMP Beratung, Inhaberin Anja Miebach, Langer Weg 7b, 33332 Gütersloh, Deutschland

@@ -1,6 +1,6 @@
-# Handwerk-Marketing 2.0: Wie du mit Content-Marketing Fachkräfte und Aufträge gewinnst
+# Handwerk-Marketing 2.0: Wie Sie mit gutem Content Aufträge und Fachkräfte gewinnen
 
-> 90.000 fehlende Fachkräfte im Handwerk: Wie du mit Content-Marketing gleichzeitig Aufträge gewinnst und Mitarbeiter findest.
+> 90.000 fehlende Fachkräfte im Handwerk: Wie Sie mit Karriereseite, Google-Profil und Fachseiten Aufträge gewinnen und Mitarbeiter finden.
 
 **Autorin:** Anja (Gründerin & Inhaberin von regionalflat) · **Veröffentlicht:** 27. November 2025 · **Lesezeit:** 6 Min.
 **Quelle:** https://regionalflat.de/impulse/handwerk-marketing-2-0-wie-du-mit-content-marketing-auftraege-und-fachkraefte-gewinnst/
@@ -9,137 +9,128 @@
 
 ## Volle Auftragsbücher, aber leere Bewerbermappen?
 
-Stell dir vor: Du führst einen erfolgreichen Handwerksbetrieb. Die Auftragslage ist gut, die Kunden sind zufrieden. Doch du hast ein Problem: Es fehlen Fachkräfte. Aufträge müssen abgelehnt werden, weil die Kapazitäten nicht reichen. Gleichzeitig bleiben Bewerbungen aus – obwohl du ein fairer Arbeitgeber bist und gute Löhne zahlst.
+Stellen Sie sich vor: Sie führen einen erfolgreichen Handwerksbetrieb. Die Auftragslage ist gut, die Kunden sind zufrieden. Doch Sie haben ein Problem: Es fehlen Fachkräfte. Aufträge müssen abgelehnt werden, weil die Kapazitäten nicht reichen. Gleichzeitig bleiben Bewerbungen aus – obwohl Sie ein fairer Arbeitgeber sind und gute Löhne zahlen.
 
 Das ist kein Einzelfall. Laut KOFA fehlen im deutschen Handwerk **knapp 90.000 Gesellen, 8.700 Meister und etwa 9.500 weitere Fortbildungsabsolventen**. Der Fachkräftemangel ist die größte Herausforderung für die Branche.
 
 Gleichzeitig gibt es in Deutschland **rund 1 Million Handwerksbetriebe mit 5,6 Millionen Beschäftigten** (ZDH, 2025). Der Wettbewerb um die besten Köpfe ist enorm. Junge Talente informieren sich heute online über potenzielle Arbeitgeber. Wer hier nicht präsent ist, existiert für die nächste Generation von Fachkräften nicht.
 
-In diesem Artikel zeigen wir dir, wie du als Handwerksbetrieb mit gezieltem Content-Marketing für Social Media und deinen Blog nicht nur neue Aufträge gewinnst, sondern auch dringend benötigte Fachkräfte auf dich aufmerksam machst.
+In diesem Artikel zeigen wir Ihnen, wie Sie als Handwerksbetrieb mit den richtigen Inhalten – auf Ihrer Website, einer eigenen Karriereseite und in Ihrem Google-Profil – nicht nur neue Aufträge gewinnen, sondern auch dringend benötigte Fachkräfte auf sich aufmerksam machen.
 
 ## Das Problem: Traditionelles Marketing reicht nicht mehr
 
 Viele Handwerksbetriebe verlassen sich auf traditionelle Mundpropaganda und vernachlässigen ihre digitale Visitenkarte. Laut ZDH haben zwar viele Betriebe eine eigene Webseite, nutzen aber die Potenziale des Online-Marketings kaum aus.
 
-**Veraltete Webseiten:** Viele Handwerks-Webseiten sind veraltet, nicht für mobile Geräte optimiert und enthalten kaum Informationen über den Betrieb oder das Team.
+**Veraltete Webseiten:** Viele Handwerks-Webseiten sind veraltet, nicht für mobile Geräte optimiert und enthalten kaum Informationen über den Betrieb oder das Team. Das wiegt schwerer, als es scheint: Google, Google Maps und KI wie ChatGPT greifen für ihre Angaben über einen Betrieb immer wieder auf die Website zurück und gleichen Google-Profil und Bewertungen mit ihr ab. Eine alte, langsame Seite ohne klare Leistungstexte schwächt deshalb auch alles andere – dabei ist sie die wichtigste Quelle, die ein Betrieb selbst vollständig in der Hand hat.
 
-**Inaktive Social-Media-Kanäle:** Social-Media-Kanäle werden, wenn überhaupt, nur sporadisch und ohne klare Strategie bespielt. Das Ergebnis: Die Betriebe sind online unsichtbar.
+**Lückenhafte Google-Profile:** Öffnungszeiten fehlen, Fotos sind Jahre alt, Bewertungen bleiben unbeantwortet. Social-Media-Kanäle werden, wenn überhaupt, nur sporadisch und ohne klare Strategie bespielt. Das Ergebnis: Die Betriebe sind online kaum zu finden.
 
-**Fehlende Sichtbarkeit:** Potenzielle Kunden und Bewerber finden den Betrieb online nicht. Wer bei Google "Dachdecker in [Stadt]" sucht, findet die Konkurrenz – aber nicht dich.
+**Kunden und Bewerber finden den Betrieb nicht:** Wer bei Google „Dachdecker in [Stadt]" sucht, findet die Konkurrenz – aber nicht Sie.
 
-**Keine Employer-Branding-Strategie:** Viele Betriebe zeigen nicht, warum es sich lohnt, bei ihnen zu arbeiten. Junge Menschen wollen wissen: Wie ist die Atmosphäre? Wer sind die Kollegen? Welche Perspektiven gibt es?
+**Keine Karriereseite:** Viele Betriebe zeigen nicht, warum es sich lohnt, bei ihnen zu arbeiten. Junge Menschen wollen wissen: Wie ist die Atmosphäre? Wer sind die Kollegen? Welche Perspektiven gibt es?
 
 **Fachkräftemangel verschärft sich:** Ohne Online-Präsenz verpassen Betriebe die Chance, sich als attraktiver Arbeitgeber zu präsentieren. Die besten Talente gehen zur Konkurrenz.
 
-## Die Lösung: Mit authentischem Content zum attraktiven Arbeitgeber
+## Die Lösung: Mit authentischen Inhalten zum attraktiven Arbeitgeber
 
-Content-Marketing für Handwerksbetriebe bedeutet, die eigene Arbeit sichtbar zu machen und die Leidenschaft für das Handwerk zu teilen. Zeige, was du kannst!
+Gutes Marketing für Handwerksbetriebe bedeutet, die eigene Arbeit zu zeigen und die Leidenschaft für das Handwerk zu teilen – dort, wo Kunden und Bewerber tatsächlich nachschauen: auf Ihrer Website, Ihrer Karriereseite und in Ihrem Google-Profil.
 
-**Vorher-Nachher-Bilder:** Dokumentiere deine Projekte mit hochwertigen Vorher-Nachher-Bildern. Ein frisch gedämmtes Dach, ein neu angelegter Garten oder ein renoviertes Badezimmer – zeige deine Arbeit stolz.
+**Vorher-Nachher-Bilder:** Dokumentieren Sie Ihre Projekte mit hochwertigen Vorher-Nachher-Bildern. Ein frisch gedämmtes Dach, ein neu angelegter Garten oder ein renoviertes Badezimmer – zeigen Sie Ihre Arbeit stolz, auf der Website und im Google-Profil.
 
-**Baustellen-Videos:** Erstelle kurze Videos von der Baustelle für Instagram Reels, TikTok oder YouTube Shorts. Zeige, wie du arbeitest, welche Techniken du einsetzt und welche Herausforderungen du meisterst.
+**Fachseiten zu Ihren Leistungen:** Beschreiben Sie jede Leistung auf einer eigenen Seite: was Sie machen, für wen, in welchem Gebiet. Themen wie „Die 5 häufigsten Fehler beim Dachausbau", „Gartenpflege im Herbst" oder „Wie Sie Ihr Haus energetisch sanieren" beantworten echte Kundenfragen und helfen Ihnen bei Google.
 
-**Team-Vorstellungen:** Stelle dein Team vor! Zeige die Menschen hinter dem Betrieb. Das macht dein Unternehmen greifbar und menschlich.
+**Team-Vorstellungen:** Stellen Sie Ihr Team vor. Zeigen Sie die Menschen hinter dem Betrieb. Das macht Ihr Unternehmen greifbar und menschlich.
 
-**Azubi-Geschichten:** Lass deine Azubis zu Wort kommen. Wie ist die Ausbildung? Was lernen sie? Warum haben sie sich für dein Unternehmen entschieden? Das ist authentisches Employer Branding.
+**Azubi-Geschichten:** Lassen Sie Ihre Azubis zu Wort kommen. Wie ist die Ausbildung? Was lernen sie? Warum haben sie sich für Ihren Betrieb entschieden? Auf einer Karriereseite gebündelt, ist das authentisches Employer Branding.
 
-**Kundenbewertungen und Testimonials:** Lass zufriedene Kunden zu Wort kommen. Positive Bewertungen schaffen Vertrauen und Social Proof.
+**Kundenbewertungen:** Bitten Sie zufriedene Kunden um eine Google-Bewertung und antworten Sie darauf. Positive Bewertungen schaffen Vertrauen – bei Kunden genauso wie bei Bewerbern.
 
-**SEO-optimierte Blog-Artikel:** Schreibe über Themen wie "Die 5 häufigsten Fehler beim Dachausbau", "Gartenpflege im Herbst" oder "Wie du dein Haus energetisch sanierst". Das verbessert dein Google-Ranking.
+**Baustellen-Videos als Ergänzung:** Wer Spaß daran hat, kann kurze Videos von der Baustelle für Instagram Reels, TikTok oder YouTube Shorts drehen. Sie zeigen, wie Sie arbeiten – ersetzen aber keine Website, auf der Interessenten die Fakten finden.
 
-## Praxisbeispiel: Dachdeckerei Müller aus dem Ruhrgebiet
+## Beispiel: So kann das bei einer Dachdeckerei aussehen
 
-Die Dachdeckerei Müller, ein mittelständischer Handwerksbetrieb mit 15 Mitarbeitern, kämpfte mit dem Fachkräftemangel. Trotz guter Auftragslage fehlten qualifizierte Dachdecker. Der Inhaber entschied sich für die **Professional-Flatrate von regionalflat.de für 597 Euro pro Monat**, um die Online-Präsenz zu stärken.
+Nehmen wir eine Dachdeckerei mit 15 Mitarbeitern. Die Auftragslage ist gut, aber es fehlen qualifizierte Dachdecker, und Stellenanzeigen in der Zeitung bringen kaum noch Rückmeldungen.
 
-**Die Content-Strategie:**
+**Die Inhalte:**
 
-Anstatt weiterhin auf Stellenanzeigen in Zeitungen zu setzen, wurde eine umfassende Content-Strategie entwickelt. Es wurden regelmäßig Vorher-Nachher-Bilder von Projekten auf Instagram und Facebook geteilt. Einmal pro Woche wurde ein kurzes Video von der Baustelle für Instagram Reels geteilt, in dem die Mitarbeiter ihre Arbeit zeigten. Zusätzlich wurden drei Blog-Artikel pro Monat mit Themen wie "Die 5 häufigsten Fehler beim Dachausbau" oder "Warum eine gute Dachdämmung Geld spart" veröffentlicht.
+Statt weiter auf Zeitungsanzeigen zu setzen, baut der Betrieb seine Website aus. Eine Karriereseite stellt das Team vor, beschreibt die Ausbildung und nennt die offenen Stellen; die Stellen erscheinen zusätzlich bei Google Jobs. Fachseiten beantworten Fragen wie „Die 5 häufigsten Fehler beim Dachausbau" oder „Warum eine gute Dachdämmung Geld spart". Das Google-Profil zeigt aktuelle Fotos von Baustellen, und nach jedem abgeschlossenen Auftrag bittet der Betrieb seine Kunden um eine Bewertung.
 
-Ein besonderer Erfolg war die Einführung einer "Azubi-Story des Monats", in der ein Azubi seine Erfahrungen teilte. Diese authentischen Geschichten wurden auf Social Media und auf der Website geteilt und sorgten für eine hohe Identifikation bei jungen Menschen.
+Eine „Azubi-Story des Monats", in der ein Azubi seine Erfahrungen teilt, landet auf der Karriereseite – und wer mag, teilt sie zusätzlich auf Instagram oder Facebook. Solche authentischen Geschichten sprechen junge Menschen deutlich mehr an als eine nüchterne Anzeige.
 
-**Das Ergebnis nach 6 Monaten:**
+**Worauf es ankommt:**
 
-Die Zahl der Bewerbungen stieg um **150 Prozent**. Drei neue Fachkräfte konnten eingestellt werden. Die Zahl der Follower auf Instagram und Facebook stieg um **400 Prozent**. Die Anfragen von Neukunden stiegen um **30 Prozent**. Der Betrieb wurde als attraktiver Arbeitgeber wahrgenommen.
+Bewerber und Kunden, die den Betrieb bei Google, in Google Maps oder in ChatGPT finden, landen auf einer Website, die ihre Fragen beantwortet: Was macht der Betrieb? Wer arbeitet dort? Warum lohnt es sich, hier anzufangen? Wie schnell sich das in Bewerbungen und Anfragen niederschlägt, hängt von Region, Gewerk und Wettbewerb ab – feste Zahlen dafür kann niemand seriös versprechen.
 
-**Die Kosten:** 597 Euro pro Monat für die Professional-Flatrate – weniger als die Kosten für eine einzige Stellenanzeige in einer Zeitung.
+## Die wichtigsten Maßnahmen für Handwerksbetriebe
 
-## Die wichtigsten Content-Marketing-Strategien für Handwerksbetriebe
+**1. Eine eigene Karriereseite**
 
-**1. Instagram für Vorher-Nachher-Bilder**
+Bündeln Sie alles, was Bewerber wissen wollen, auf einer Seite: Team, Arbeitsalltag, Ausbildung, offene Stellen, Ansprechpartner. Stellen Sie offene Stellen zusätzlich so ein, dass sie bei Google Jobs erscheinen.
 
-Instagram ist die perfekte Plattform für visuelle Inhalte. Zeige deine Projekte mit hochwertigen Vorher-Nachher-Bildern. Nutze Instagram Stories für spontane Einblicke und Reels für kurze Videos.
+**2. Google-Unternehmensprofil pflegen**
 
-**2. Facebook für Community-Building**
+Über 46 Prozent aller Google-Suchen sind lokal. Pflegen Sie Ihr Google-Unternehmensprofil (früher Google My Business) mit aktuellen Fotos, Öffnungszeiten und Antworten auf Bewertungen. So finden Kunden Ihren Betrieb in der Suche und in Google Maps.
 
-Facebook eignet sich hervorragend für längere Beiträge, Events und Community-Building. Teile Kundenbewertungen, stelle dein Team vor und informiere über neue Projekte.
+**3. Fachseiten für Ihre Leistungen**
 
-**3. TikTok für jüngere Zielgruppen**
+Schreiben Sie regelmäßig Fachseiten über Themen, die Ihre Kunden interessieren. Das hilft Ihnen bei Google, zeigt Sie als Experten – und liefert auch KI-Assistenten wie ChatGPT die Angaben, die sie für eine Empfehlung brauchen.
 
-TikTok gewinnt in der Handwerksbranche immer mehr an Bedeutung. Kurze, unterhaltsame Videos können viral gehen und tausende neue Bewerber erreichen.
+**4. Bewertungen sammeln**
 
-**4. YouTube für längere Inhalte**
+Fragen Sie zufriedene Kunden aktiv nach einer Bewertung, zum Beispiel mit einer QR-Karte, die Sie nach dem Auftrag übergeben. Antworten Sie auf jede Bewertung – auch auf kritische.
 
-YouTube eignet sich für längere Videos, Tutorials oder virtuelle Betriebsführungen. Erstelle eine Playlist mit "Tipps vom Profi" oder "Ein Tag auf der Baustelle".
+**5. Social Media als Ergänzung**
 
-**5. Google My Business optimieren**
+Instagram eignet sich für Vorher-Nachher-Bilder und Reels, Facebook für längere Beiträge und Neuigkeiten aus dem Betrieb, TikTok für jüngere Zielgruppen, YouTube für längere Videos wie „Ein Tag auf der Baustelle". Wer hier regelmäßig etwas zeigt, erreicht zusätzliche Menschen – die Grundlage bleiben aber Website, Karriereseite und Google-Profil.
 
-Über 46 Prozent aller Google-Suchen sind lokal. Optimiere dein Google My Business Profil mit aktuellen Fotos, Öffnungszeiten und Antworten auf Bewertungen. Das verbessert deine lokale Sichtbarkeit enorm.
+## So unterstützt regionalflat Ihren Handwerksbetrieb
 
-**6. Blog für SEO und Expertise**
+Grundlage jedes regionalflat-Pakets ist Ihre neue Website – aktuell, schnell und fürs Handy gemacht. Darauf aufbauend übernehmen wir je nach Paket Google-Profil, Fachseiten, Bewertungen und Karriereseite für Sie. Für Betriebe, die vor allem neue Mitarbeiter suchen, ist das Premium-Paket mit Karriereseite und Stellen bei Google Jobs gedacht.
 
-Schreibe regelmäßig Blog-Artikel über Themen, die deine Zielgruppe interessieren. Das verbessert dein Google-Ranking und positioniert dich als Experten.
-
-## Die All-in-One-Lösung: Deine Content-Abteilung zum Festpreis
-
-Das Beispiel der "Dachdeckerei Müller" zeigt, wie gezieltes Content-Marketing Fachkräfte gewinnen und einen Handwerksbetrieb erfolgreich machen kann. regionalflat.de bietet hierfür eine passgenaue Lösung: Drei transparente Flatrates, die je nach Bedarf die komplette Content-Erstellung abdecken.
-
-**Unsere Pakete im Überblick:**
-
-| Paket | Starter | Professional | Enterprise |
+| | Starter | Professional | Premium |
 | --- | --- | --- | --- |
-| **Social-Media-Posts** | 12/Monat | 24/Monat | 30/Monat |
-| **Blog-Artikel (SEO)** | 1/Monat | 3/Monat | 6/Monat |
-| **Video-Content** | – | 4/Monat | 8/Monat |
-| **Professionelles Erklärvideo** | – | – | 1/Jahr |
-| **Preis** | Ab 297 € | Ab 597 € | Ab 997 € |
+| **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
+| **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |
+| Website mit Hosting, Sicherheit und Pflege | ✓ | ✓ | ✓ |
+| Google-Profil gepflegt | ✓ | ✓ | ✓ |
+| Monatsbericht mit vier Ampeln | ✓ | ✓ | ✓ |
+| Neue Fachseiten pro Monat | – | 2 | 4 |
+| Gefunden werden in ChatGPT & Co. | Grundlage | ✓ | ✓ |
+| Mehr Google-Bewertungen (QR-Karten, Erinnerung) | – | ✓ | ✓ |
+| Karriereseite | – | ✓ | ✓ |
+| Stellen bei Google Jobs | – | – | ✓ |
 
-**Was wir für dich tun:**
+Website und Hosting sind in jedem Paket enthalten, 0 € vorab. Mindestlaufzeit 12 Monate, danach monatlich kündbar. Feste Plätze bei Google oder in KI-Antworten verspricht niemand seriös – auch wir nicht. Alle Fakten: [regionalflat auf einen Blick](/fakten/) · [Pakete & Preise](/#pakete) · [Kostenloses Gespräch vereinbaren](/#termin)
 
-Wir erstellen authentischen Social-Media-Content für Instagram, Facebook und LinkedIn, der deine Arbeit zeigt und Bewerber anzieht. Wir schreiben professionelle, SEO-optimierte Blog-Artikel über Handwerks-Themen. Wir produzieren kurze Baustellen-Videos für Instagram Reels und YouTube Shorts. Wir entwickeln eine Content-Strategie, die zu deinem Betrieb passt.
+## Fazit: Handwerk hat goldenen Boden – aber nur, wenn man Sie findet
 
-**Du musst dich nicht mit komplizierter Software oder der Analyse von Daten herumschlagen.** Du wählst eine von drei Flatrates und erhältst alle Leistungen zu einem transparenten, monatlichen Festpreis. Spare Zeit, senke deine Kosten und profitiere von unserer Expertise – alles in einer transparenten Flatrate.
+Das deutsche Handwerk boomt. Die Auftragsbücher sind voll, die Nachfrage ist hoch. Doch ohne gute Online-Präsenz verpassen Betriebe die Chance, neue Fachkräfte zu gewinnen und sich als attraktiver Arbeitgeber zu zeigen.
 
-Wir kombinieren über 20 Jahre professionelle Marketing-Erfahrung mit der Effizienz modernster KI-Technologie. Dieser unschätzbare Vorteil stellt sicher, dass deine Inhalte nicht nur schnell und kostengünstig erstellt werden, sondern auch strategisch fundiert und auf deine Ziele ausgerichtet sind.
+Die Zahlen sprechen für sich: **1 Million Betriebe, 5,6 Millionen Beschäftigte, 90.000 fehlende Fachkräfte**. Der Wettbewerb um die besten Köpfe ist enorm. Eine gepflegte Website mit Karriereseite, ein aktuelles Google-Profil, aussagekräftige Fachseiten und echte Bewertungen sind die Grundlage, um sich abzuheben, Bewerber zu gewinnen und neue Kunden zu erreichen.
 
-## Fazit: Handwerk hat goldenen Boden – aber nur mit Online-Marketing
-
-Das deutsche Handwerk boomt. Die Auftragsbücher sind voll, die Nachfrage ist hoch. Doch ohne Online-Marketing verpassen Betriebe die Chance, neue Fachkräfte zu gewinnen und sich als attraktiver Arbeitgeber zu positionieren.
-
-Die Zahlen sprechen für sich: **1 Million Betriebe, 5,6 Millionen Beschäftigte, 90.000 fehlende Fachkräfte**. Der Wettbewerb um die besten Köpfe ist enorm. Content-Marketing ist das effektivste Werkzeug, um sich abzuheben, Bewerber zu gewinnen und neue Kunden zu erreichen.
-
-Mit den transparenten Flatrates von regionalflat.de wird professionelles Content-Marketing für jeden Handwerksbetrieb erschwinglich und planbar. Investiere in deine Online-Präsenz – es ist die beste Investition für die Zukunft deines Betriebs.
+Investieren Sie in Ihre Online-Präsenz – damit Ihr Betrieb für Kunden und Bewerber in Ihrer Region die erste Wahl sein kann.
 
 ## Häufige Fragen
 
 ### Warum braucht das Handwerk überhaupt Online-Marketing?
 
-Weil sich heute alle online informieren – sowohl potenzielle Kunden als auch Bewerber. Laut ZDH haben zwar viele Handwerksbetriebe eine Webseite, nutzen aber die Potenziale des Online-Marketings kaum aus. Junge Fachkräfte suchen online nach Arbeitgebern. Wer hier nicht präsent ist, existiert für die nächste Generation nicht. Außerdem: Mundpropaganda reicht im digitalen Zeitalter nicht mehr aus. Mit Online-Marketing erreichst du mehr Menschen, baust Vertrauen auf und positionierst dich als attraktiver Arbeitgeber.
+Weil sich heute alle online informieren – sowohl potenzielle Kunden als auch Bewerber. Laut ZDH haben zwar viele Handwerksbetriebe eine Webseite, nutzen aber die Potenziale des Online-Marketings kaum aus. Junge Fachkräfte suchen online nach Arbeitgebern. Wer hier nicht präsent ist, existiert für die nächste Generation nicht. Außerdem: Mundpropaganda reicht im digitalen Zeitalter nicht mehr aus. Mit einer guten Website, einem gepflegten Google-Profil und echten Bewertungen erreichen Sie mehr Menschen, bauen Vertrauen auf und zeigen sich als attraktiver Arbeitgeber.
 
-### Welche Social-Media-Kanäle sind für Handwerksbetriebe am wichtigsten?
+### Reichen Social-Media-Kanäle, um neue Mitarbeiter zu finden?
 
-Instagram und Facebook sind die wichtigsten Kanäle für Handwerksbetriebe. Instagram eignet sich perfekt für Vorher-Nachher-Bilder, Baustellen-Videos und Einblicke in den Betriebsalltag. Facebook ist ideal für längere Beiträge, Events und Community-Building. Laut handwerk-magazin.de sind soziale Netzwerke für viele Handwerksbetriebe bereits heute die wichtigsten Kanäle, um neue Mitarbeiter zu finden. TikTok gewinnt ebenfalls an Bedeutung, besonders für jüngere Zielgruppen.
+Sie können helfen, sind aber selten das Fundament. Laut handwerk-magazin.de sind soziale Netzwerke für viele Handwerksbetriebe bereits wichtige Kanäle, um neue Mitarbeiter zu finden – Instagram eignet sich für Vorher-Nachher-Bilder und Einblicke in den Betriebsalltag, Facebook für längere Beiträge, TikTok vor allem für jüngere Zielgruppen. Wer sich aber für Ihren Betrieb interessiert, landet am Ende auf Ihrer Website, Ihrer Karriereseite und Ihrem Google-Profil. Wenn dort nichts Überzeugendes steht, verpufft auch der beste Post.
 
 ### Wie kann ich als Handwerksbetrieb neue Fachkräfte finden?
 
-Zeige deinen Betrieb authentisch online! Stelle dein Team vor, zeige den Arbeitsalltag, dokumentiere Projekte und teile Erfolgsgeschichten von Azubis. Laut KOFA fehlen im Handwerk knapp 90.000 Gesellen, 8.700 Meister und 9.500 weitere Fortbildungsabsolventen. Junge Menschen suchen online nach Arbeitgebern. Mit Content-Marketing machst du deinen Betrieb sichtbar und attraktiv. Nutze Instagram, Facebook und YouTube, um zu zeigen, warum es sich lohnt, bei dir zu arbeiten.
+Zeigen Sie Ihren Betrieb authentisch online. Stellen Sie Ihr Team vor, zeigen Sie den Arbeitsalltag, dokumentieren Sie Projekte und erzählen Sie die Geschichten Ihrer Azubis – am besten gebündelt auf einer eigenen Karriereseite. Laut KOFA fehlen im Handwerk knapp 90.000 Gesellen, 8.700 Meister und 9.500 weitere Fortbildungsabsolventen. Junge Menschen suchen online nach Arbeitgebern. Eine Karriereseite, offene Stellen bei Google Jobs, ein gepflegtes Google-Profil und echte Bewertungen machen Ihren Betrieb für sie auffindbar und zeigen, warum es sich lohnt, bei Ihnen zu arbeiten.
 
-### Lohnt sich ein Blog für meinen Handwerksbetrieb?
+### Lohnen sich Fachseiten oder ein Blog für meinen Handwerksbetrieb?
 
-Ja! Ein Blog ist ideal, um deine Expertise zu zeigen und bei Google für Suchanfragen wie 'Dachdecker in [deiner Stadt]' oder 'Garten neu anlegen' gefunden zu werden. Schreibe über Themen wie 'Die 5 häufigsten Fehler beim Dachausbau', 'Gartenpflege im Herbst' oder 'Wie du dein Haus energetisch sanierst'. Das verbessert dein SEO-Ranking, positioniert dich als Experten und bringt neue Kunden. Mit regionalflat.de erhältst du 1-6 SEO-optimierte Blog-Artikel pro Monat.
+Ja. Fachseiten sind ideal, um Ihre Expertise zu zeigen und bei Google für Suchanfragen wie „Dachdecker in [Ihre Stadt]" oder „Garten neu anlegen" gefunden zu werden. Schreiben Sie über Themen wie „Die 5 häufigsten Fehler beim Dachausbau", „Gartenpflege im Herbst" oder „Wie Sie Ihr Haus energetisch sanieren". Das hilft Ihnen bei Google, zeigt Sie als Experten und bringt neue Kunden. Im regionalflat-Paket kommen je nach Paket zwei oder vier neue Fachseiten pro Monat hinzu.
 
-### Was kostet professionelles Content-Marketing für Handwerksbetriebe?
+### Was kostet das regionalflat-Paket für Handwerksbetriebe?
 
-Mit regionalflat.de zahlst du 297-997 Euro pro Monat für alle Leistungen – von Social-Media-Posts über Blog-Artikel bis zu Videos. Das ist bis zu 90 Prozent günstiger als eine Agentur, die oft 3.000-5.000 Euro pro Monat verlangt. Du erhältst eine transparente Flatrate ohne versteckte Kosten oder lange Vertragslaufzeiten. Wir erstellen 12-30 Social-Media-Posts, 1-6 Blog-Artikel und 0-8 Videos pro Monat – je nach gewähltem Paket.
+Das regionalflat-Paket kostet 299, 499 oder 799 Euro pro Monat zzgl. MwSt. Website und Hosting sind in jedem Paket enthalten, vorab zahlen Sie 0 €. Die Mindestlaufzeit beträgt 12 Monate, danach ist das Paket monatlich kündbar. Für Betriebe, die Fachkräfte suchen, sind vor allem Professional (mit Karriereseite) und Premium (zusätzlich Stellen bei Google Jobs) gedacht.
 
 
 ## Quellen

@@ -4,11 +4,12 @@ Hinweise für KI-Agenten, Crawler und Coding-Agenten, die diese Website lesen od
 
 ## Über diese Website
 
-regionalflat.de ist die Website einer deutschen GEO-Agentur (Generative Engine Optimization) für den
-regionalen Mittelstand. Inhaltlicher Schwerpunkt: KI-Sichtbarkeit von KMU in ChatGPT, Gemini,
-Perplexity und Google AI Overviews.
+regionalflat.de ist die Website von regionalflat: einem Monatspaket für regionale Betriebe in
+Ostwestfalen-Lippe – neue Website mit Hosting und Pflege plus die laufende Arbeit daran, dass Kunden und
+Bewerber den Betrieb bei Google, in Google Maps und in KI wie ChatGPT finden. Pakete ab 299 € im Monat
+(netto), Website inklusive, 12 Monate Mindestlaufzeit.
 
-- Betreiber: regionalflat® — eine Marke der AMP Beratung, Langer Weg 7b, 33332 Gütersloh, Deutschland
+- Betreiber: regionalflat – eine Marke der AMP Beratung, Inhaberin Anja Miebach, Langer Weg 7b, 33332 Gütersloh, Deutschland
 - Kontakt: [hi@regionalflat.de](mailto:hi@regionalflat.de)
 - Sprache: Deutsch (`de`)
 - Strukturierte Zusammenfassung für LLMs: [llms.txt](https://regionalflat.de/llms.txt)
@@ -24,11 +25,12 @@ Perplexity und Google AI Overviews.
 
 ## Inhalte
 
-- `/` — Startseite mit Leistungen, Paketen, Referenzen, Selbsttest und Terminbuchung.
+- `/` — Startseite mit Angebot, Ablauf, Paketen, Vertragsbedingungen, häufigen Fragen und Terminbuchung.
 - `/impulse/` — Fachblog. Jeder Artikel enthält Autorin, Veröffentlichungsdatum, belegte Statistiken
   mit Quellenangabe und einen FAQ-Block.
+- `/fakten/` — alle Fakten zu regionalflat an einer Stelle (für wen, Pakete, Preise, Laufzeit, Ablauf, Begriffe). Maßgebliche Quelle.
 - `/ueber-uns/`, `/kontakt/` — Unternehmens- und Kontaktinformationen.
-- `/impressum/`, `/datenschutz/`, `/agb/` — Rechtstexte. Die Datenschutzerklärung enthält eine
+- `/impressum/`, `/datenschutz/`, `/agb/`, `/leistungsbeschreibung/`, `/avv/` — Rechtstexte und Vertragsunterlagen. Die Datenschutzerklärung enthält eine
   vollständige Liste der eingesetzten Auftragsverarbeiter (Sub-Prozessoren).
 
 ## Nutzung durch KI-Systeme

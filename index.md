@@ -1,61 +1,42 @@
-# regionalflat.de — KI-Sichtbarkeit für den regionalen Mittelstand
+# regionalflat — Neue Kunden und Fachkräfte aus Ihrer Region
 
 > Markdown-Fassung der Startseite für KI-Agenten und LLM-Crawler. Maßgeblich ist immer die
 > HTML-Seite unter [https://regionalflat.de/](https://regionalflat.de/).
+> Alle Fakten zu regionalflat auf einer Seite: [Auf einen Blick](https://regionalflat.de/fakten/).
 
 ## Worum es geht
 
-Immer mehr Menschen suchen nicht mehr bei Google, sondern fragen ChatGPT, Gemini, Perplexity oder die
-KI-Übersicht von Google nach einem Restaurant, einem Handwerker oder einer Praxis in ihrer Nähe. Diese
-Systeme liefern keine Linkliste, sondern nennen drei bis vier Anbieter. Wer dort nicht auftaucht,
-verliert Kundschaft, ohne es zu merken.
+Wer heute eine Werkstatt, einen Handwerker oder eine Praxis sucht, fragt das Handy – Google Maps, die Google-Suche oder KI wie ChatGPT – und ruft einen der ersten Betriebe an, die dort erscheinen. Bewerber suchen genauso. regionalflat sorgt jeden Monat dafür, dass regionale Betriebe dort als erste Wahl gefunden werden, und baut und betreibt dafür auch die Website.
 
-Gute Google-Rankings schützen davor nicht: KI-Systeme fragen keinen Seitenrang ab, sondern bewerten
-Kontext, Vertrauenswürdigkeit und wie klar ein Unternehmen als Entität erkennbar ist. Genau hier setzt
-regionalflat an — mit GEO (Generative Engine Optimization) und AEO (Answer Engine Optimization).
+## Warum die Website die Grundlage ist
 
-## Leistungen
+Google Maps, die Google-Suche und KI wie ChatGPT greifen für ihre Angaben über einen Betrieb immer wieder auf seine Website zurück und gleichen Google-Profil, Einträge und Bewertungen mit ihr ab. Die Website ist die Quelle, die der Betrieb selbst in der Hand hat. Deshalb gehört zu jedem regionalflat-Paket eine neue Website, die regionalflat betreibt und jeden Monat aktuell hält.
 
-- **KI-Sichtbarkeits-Check** — Analyse, ob und wo ein Betrieb in ChatGPT, Gemini, Perplexity und der
-  Google-KI empfohlen wird, inklusive Vergleich mit den lokalen Wettbewerbern.
-- **Profile & Brancheneinträge** — Aufbau und Pflege der Quellen, aus denen KI-Systeme ihre regionalen
-  Empfehlungen ziehen.
-- **KI-Texte** — monatliche, maschinenlesbare Inhalte, die echte Kundenfragen beantworten und dadurch
-  zitierfähig sind.
-- **Bewertungs-Management** — Bewertungen systematisch aufbauen und beantworten.
-- **Monitoring & Reporting** — nachvollziehbare Entwicklung der KI-Sichtbarkeit statt Bauchgefühl.
+## So funktioniert es
+
+1. **Website – fertig und gepflegt:** modern, sicher, fürs Handy gemacht; Hosting in Deutschland, Sicherheitsupdates und kleine Änderungen sind im Monatspreis enthalten. Der Betrieb sieht seine neue Website, bevor er bestellt.
+2. **Als erste Wahl gefunden werden:** gepflegtes Google-Profil, Fachseiten zu den Fragen der Kunden, mehr Google-Bewertungen, Aufbereitung für KI wie ChatGPT; ab Professional Karriereseite, in Premium Stellen bei Google Jobs.
+3. **Jeden Monat schwarz auf weiß:** ein Bericht auf einer Seite mit Anrufen, Anfragen, Bewertungen und vier Ampeln (Google Maps, Google-Suche, KI, Website).
 
 ## Pakete
 
-Alle Preise pro Monat, Mindestlaufzeit 6 Monate. Sichtbarkeits-Versprechen: Bewegt sich nach 90 Tagen
-nichts, ist der Rest der Laufzeit kostenlos.
+| Paket | Preis netto/Monat | Wofür | Kern |
+| --- | --- | --- | --- |
+| Starter | 299 € | ordentlich auftreten | neue Website inkl. Hosting, Sicherheit und Pflege · 1 kleine Änderung/Monat · Google-Profil gepflegt · Monatsbericht mit vier Ampeln |
+| Professional | 499 € | mehr Anfragen | alles aus Starter · 2 neue Fachseiten/Monat · Arbeit an der Sichtbarkeit in KI wie ChatGPT · mehr Google-Bewertungen (QR-Karten, Erinnerung) · Karriereseite · bis 3 Änderungen/Monat · Gespräch halbjährlich |
+| Premium | 799 € | Anfragen und Mitarbeiter | alles aus Professional · 4 Fachseiten/Monat · Stellen bei Google Jobs und Stellentexte · bis 6 Änderungen/Monat · Gespräch vierteljährlich |
 
-| Paket | Preis | Profile & Brancheneinträge | KI-Texte/Monat | Bewertungs-Management |
-| --- | --- | --- | --- | --- |
-| Starter | 299 €/Monat | 15 | 2 | Starthilfe |
-| Professional | 499 €/Monat | 40 | 4 | aktiv |
-| Premium | 799 €/Monat | 60+ | 8 | aktiv |
-
-Premium enthält zusätzlich Presse, Videos, Wissensdatenbanken und Wettbewerbs-Beobachtung. Der
-KI-Sichtbarkeits-Check ist in allen Paketen die Basis.
-
-## Selbsttest
-
-Öffnen Sie ChatGPT und fragen Sie: „Welcher [Ihre Branche] in [Ihre Stadt] ist zu empfehlen?" Wenn Ihr
-Betrieb nicht unter den genannten Namen ist, hat die KI ihn nicht als Option. Eine ausführliche
-Anleitung steht unter
-[So testest du deine KI-Sichtbarkeit in 15 Minuten](https://regionalflat.de/impulse/so-testest-du-deine-ki-sichtbarkeit-in-15-minuten/).
+Die Website ist in jedem Paket enthalten (0 € vorab). Bezahlt wird per SEPA-Lastschrift ab dem Tag, an dem die Website online geht. Mindestlaufzeit 12 Monate, danach monatlich kündbar (14 Tage zum Monatsende). Bei Kündigung im 13. bis 24. Monat kann der Kunde die Website für einmalig 490 € übernehmen, ab dem 25. Monat gehört sie ihm ohne weitere Zahlung. Die Domain gehört immer dem Kunden. Feste Platzierungen bei Google oder in KI-Antworten werden nicht versprochen.
 
 ## Weiterführend
 
-- [Alle Impulse (Fachblog)](https://regionalflat.de/impulse/)
-- [Über uns](https://regionalflat.de/ueber-uns/)
-- [Kontakt & Terminbuchung](https://regionalflat.de/kontakt/)
-- [Strukturierte Kurzfassung für LLMs (llms.txt)](https://regionalflat.de/llms.txt)
-- [Hinweise für Agenten (AGENTS.md)](https://regionalflat.de/AGENTS.md)
+- [Leistungsbeschreibung](https://regionalflat.de/leistungsbeschreibung/) · [AGB](https://regionalflat.de/agb/)
+- [Impulse](https://regionalflat.de/impulse/) · [Über uns](https://regionalflat.de/ueber-uns/) · [Kontakt](https://regionalflat.de/kontakt/)
+- [llms.txt](https://regionalflat.de/llms.txt) · [AGENTS.md](https://regionalflat.de/AGENTS.md)
 
 ## Kontakt
 
-- E-Mail: [hi@regionalflat.de](mailto:hi@regionalflat.de)
-- Telefon: [+49 151 53 40 69 69](tel:+4915153406969)
-- Anbieter: regionalflat® — eine Marke der AMP Beratung, Langer Weg 7b, 33332 Gütersloh, Deutschland
+- Ansprechpartner: Oliver Parrizas, [oli@regionalflat.de](mailto:oli@regionalflat.de)
+- Allgemein: [hi@regionalflat.de](mailto:hi@regionalflat.de)
+- Telefon: [+49 151 53 40 69 69](tel:+4915153406969), Mo–Fr 9–17 Uhr
+- Anbieter: regionalflat – eine Marke der AMP Beratung, Inhaberin Anja Miebach, Langer Weg 7b, 33332 Gütersloh, Deutschland
