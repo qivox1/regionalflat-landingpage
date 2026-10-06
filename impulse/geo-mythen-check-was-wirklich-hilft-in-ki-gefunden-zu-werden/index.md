@@ -77,7 +77,7 @@ Und genauso wichtig: **Akzeptieren Sie, was Sie nicht kontrollieren können.** D
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website mit klaren Inhalten – schnell, fürs Handy gemacht, inklusive Hosting und Pflege. Darauf aufbauend kümmert sich das Paket laufend um die weiteren Hebel, die nachweislich zählen – ein gepflegtes Google-Profil, ab dem Paket Professional neue Fachseiten zu echten Kundenfragen und mehr Google-Bewertungen –, und der Monatsbericht zeigt Ihnen, wo Sie stehen. Garantien und Wundermittel verkaufen wir nicht.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

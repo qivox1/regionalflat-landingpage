@@ -137,7 +137,7 @@ Der erste Durchgang ist überschaubar: Karte als Text online, Betriebsmerkmale a
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht, mit Speisekarte und Betriebsmerkmalen als lesbarem Text. Darauf aufbauend übernimmt das Paket die weiteren Grundlagen, die in Ihrer Hand liegen: ein gepflegtes Google-Profil mit stimmigen Angaben und ab dem Paket Professional mehr frische Google-Bewertungen über QR-Karten. Den Kontakt zu Stadtmagazin und Lokalredaktion ersetzt das nicht – aber er wirkt stärker, wenn die Fakten über Ihr Lokal überall stimmen.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

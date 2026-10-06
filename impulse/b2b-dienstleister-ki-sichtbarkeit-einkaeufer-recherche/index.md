@@ -102,7 +102,7 @@ Wiederholen Sie das in vier Wochen. Wenn sich nichts bewegt hat, liegt es fast i
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht und mit einer eigenen Seite für jede Kernleistung statt Fließtext auf der Startseite. Denn drei der vier Ursachen aus der Studie liegen auf Ihrer eigenen Website und in Ihren Firmendaten. Darauf aufbauend kommen hinzu: je nach Paket eigene Fachseiten zu den Fragen Ihrer Kunden, in deren Sprache formuliert, saubere Firmendaten im Google-Profil und ein Monatsbericht, der zeigt, ob Ihr Betrieb bei Google, in Google Maps und in KI-Systemen gefunden wird. Erwähnungen in Fachmedien und Verbänden bleiben Ihre Branchenarbeit – das Paket schafft die Seiten, auf die solche Beiträge verweisen können.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

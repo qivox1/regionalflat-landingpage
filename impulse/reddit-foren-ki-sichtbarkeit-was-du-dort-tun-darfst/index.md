@@ -83,7 +83,7 @@ Foren sind allerdings Fremdquellen: Was dort über Sie steht, können Sie kaum s
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website. Darauf aufbauend kümmern wir uns um das, was die KI über Sie auf Ihrer eigenen Website und in Ihrem Google-Profil findet: gepflegte Seiten, Fachseiten, die genau die Fragen Ihrer Kunden beantworten, und mehr echte Google-Bewertungen. Nur eines nehmen wir Ihnen bewusst nicht ab: Ihre echte Stimme in der Community – die ist durch nichts zu ersetzen.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

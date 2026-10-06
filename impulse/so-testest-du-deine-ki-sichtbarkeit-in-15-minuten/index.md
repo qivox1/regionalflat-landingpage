@@ -101,7 +101,7 @@ Der Selbsttest ist bewusst so gestaltet, dass Sie ihn alleine schaffen. Aber Han
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – mit klaren Leistungstexten, die Google und KI richtig verstehen. Im kostenlosen Gespräch zeigen wir Ihnen an vier Ampeln, wo Ihr Betrieb heute bei Google Maps, in der Google-Suche, in der KI und mit seiner Website steht. Im regionalflat-Paket bekommen Sie diesen Überblick jeden Monat als Bericht – und wir arbeiten darauf aufbauend daran, dass Ihr Betrieb dort die erste Wahl wird.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

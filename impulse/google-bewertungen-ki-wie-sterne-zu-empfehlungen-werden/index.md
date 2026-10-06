@@ -85,7 +85,7 @@ Die Bestandsaufnahme und die ersten Bewertungslinks schaffen Sie selbst. Aber de
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht und mit klaren Leistungstexten. Ihr Google-Profil pflegen wir in jedem Paket mit, damit Website, Bewertungen und Profildaten zusammenpassen. Darauf aufbauend gehört ab dem Paket Professional „Mehr Google-Bewertungen" fest dazu: Sie bekommen QR-Karten und Aufkleber, die direkt zu Ihrem Google-Bewertungsformular führen, und eine Bewertungs-Erinnerung per E-Mail oder SMS für Kunden, die dem vorher zugestimmt haben – ohne Gegenleistungen und damit auf der sicheren Seite.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

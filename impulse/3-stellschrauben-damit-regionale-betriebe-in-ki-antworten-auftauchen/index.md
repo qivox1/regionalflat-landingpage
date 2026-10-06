@@ -91,7 +91,7 @@ Die drei Hebel sind kein Geheimwissen. Woran es scheitert, ist fast immer dassel
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht, mit klaren Leistungstexten und laufend technisch gepflegt. Darauf aufbauend kümmert sich das Paket um die beiden anderen Stellschrauben: je nach Paket neue Fachseiten zu den Fragen Ihrer Kunden und ein gepflegtes Google-Profil mit mehr Bewertungen. So bleibt Ihr Betrieb dran, ohne dass Sie selbst zum Technik-Experten werden müssen.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

@@ -83,7 +83,7 @@ Die Bestandsaufnahme und die großen drei Profile schaffen Sie selbst an einem r
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht, mit klaren Leistungstexten und dem Master-Datensatz, den wir gemeinsam mit Ihnen festlegen, inklusive strukturierter Daten für Suchmaschinen und KI-Systeme. Darauf aufbauend halten wir diese Angaben in Ihrem Google-Profil korrekt. Ab dem Paket Professional kümmern wir uns laufend um Ihre Sichtbarkeit in ChatGPT & Co., dazu gehören auch Verzeichniseinträge.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

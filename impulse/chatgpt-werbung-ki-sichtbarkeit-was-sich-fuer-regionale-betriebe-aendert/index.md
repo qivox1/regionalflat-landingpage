@@ -79,7 +79,7 @@ Falls Sie sich fragen, ob ein Mythos dahintersteckt: Die Idee, mit Geld die Antw
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht und mit klaren Leistungstexten. Sie ist die unbezahlte Basis, die auch mit Werbung im Spiel bleibt. Darauf aufbauend kommen ein gepflegtes Google-Profil, je nach Paket neue Fachseiten und mehr Google-Bewertungen – und ein Monatsbericht, der zeigt, wo Ihr Betrieb bei Google, in Google Maps und in KI-Antworten steht. Werbebudget für ChatGPT ist **nicht** Teil der Pakete; ob ein Anzeigentest für Sie sinnvoll ist, lässt sich nach den ersten Monatsberichten besser beurteilen.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

@@ -88,7 +88,7 @@ Der erste Durchgang ist überschaubar: Leistungstexte schreiben, Einzugsgebiet f
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website, die Ihre Gewerke, Ihr Einzugsgebiet und Ihr Team in ganzen Sätzen beschreibt – schnell und fürs Handy gemacht. Darauf aufbauend nimmt Ihnen das Paket genau diese Fleißarbeit ab: Wir pflegen Website und Google-Profil, schreiben Fachseiten zu Ihren Gewerken und Ihrem Einzugsgebiet und helfen Ihnen, regelmäßig neue Google-Bewertungen zu bekommen. Mit Karriereseite und Stellen bei Google Jobs erreicht dieselbe Arbeit auch Bewerber – damit Ihr Betrieb für Kunden und Fachkräfte die erste Wahl sein kann.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

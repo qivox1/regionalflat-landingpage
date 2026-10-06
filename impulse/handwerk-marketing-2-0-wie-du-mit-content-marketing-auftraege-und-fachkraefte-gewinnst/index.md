@@ -87,7 +87,7 @@ Instagram eignet sich für Vorher-Nachher-Bilder und Reels, Facebook für länge
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – aktuell, schnell und fürs Handy gemacht. Darauf aufbauend übernehmen wir je nach Paket Google-Profil, Fachseiten, Bewertungen und Karriereseite für Sie. Für Betriebe, die vor allem neue Mitarbeiter suchen, ist das Premium-Paket mit Karriereseite und Stellen bei Google Jobs gedacht.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

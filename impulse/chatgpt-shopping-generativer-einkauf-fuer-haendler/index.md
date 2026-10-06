@@ -89,7 +89,7 @@ Dann geht es Ihnen wie fast allen Händlern. Der erste Durchgang ist überschaub
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht und laufend gepflegt, mit Sortiment, Marken, Preisspannen und Ort als lesbarem Text. Darauf aufbauend pflegen wir Ihr Google-Profil. Je nach Paket schreiben wir gemeinsam mit Ihnen Fachseiten zu den Fragen Ihrer Kunden und helfen mit QR-Karten und Erinnerungen beim Sammeln von Google-Bewertungen – damit Ihr Geschäft bei Google, in Google Maps und in ChatGPT eine echte Chance hat, die erste Wahl zu sein.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

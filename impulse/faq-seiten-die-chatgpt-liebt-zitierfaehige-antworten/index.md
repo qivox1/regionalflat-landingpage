@@ -122,7 +122,7 @@ Das Sammeln der Fragen kann Ihnen niemand abnehmen – das Wissen steckt in Ihre
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht und mit Leistungsseiten, auf denen Ihre Antworten als lesbarer Text stehen. Darauf aufbauend gehört genau diese Arbeit dazu: Ab dem Paket Professional entstehen jeden Monat neue Fachseiten – zum Beispiel Ratgeberseiten zu den Fragen, die Ihre Kunden tatsächlich stellen –, und häufige Fragen werden so aufbereitet, dass auch ChatGPT & Co. sie finden. Ihre Aufgabe bleibt das, was nur Sie können: die richtigen Antworten liefern.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

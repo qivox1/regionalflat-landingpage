@@ -115,7 +115,7 @@ Was in einem ehrlichen Report **nicht** vorkommt: ein „Sichtbarkeitsindex", de
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – aktuell, schnell und mit klaren Leistungstexten. Darauf aufbauend arbeitet das Paket nach demselben Prinzip wie dieser Artikel: Jeden Monat bekommen Sie einen Bericht auf einer Seite – mit Anrufen, Anfragen, Bewertungen und vier Ampeln, die zeigen, ob Ihr Betrieb in Google Maps, in der Google-Suche, in der KI und mit seiner Website die erste Wahl ist. Nachprüfbar statt Fantasie-Index.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

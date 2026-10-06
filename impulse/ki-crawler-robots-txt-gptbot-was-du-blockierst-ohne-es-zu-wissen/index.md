@@ -68,7 +68,7 @@ Genau diese Unterscheidung – Training versus Antwort – ist der Kern der drit
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – und weil das Hosting dazugehört, liegen robots.txt und Server-Einstellungen bei uns statt irgendwo zwischen Hoster und Plugin. Darauf aufbauend achten wir darauf, dass die Antwort-Crawler von ChatGPT & Co. Ihre Seite lesen dürfen – auch dann, wenn sich Voreinstellungen still ändern, wie bei Cloudflare am 15. September 2026.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

@@ -23,7 +23,7 @@ GEO – Generative Engine Optimization – verfolgt ein anderes Ziel: dass die K
 
 Der einfachste Weg, den Unterschied zu verstehen, ist eine direkte Gegenüberstellung:
 
-| | Klassisches SEO | SEO + GEO/LLMO |
+| Merkmal | Klassisches SEO | SEO + GEO/LLMO |
 | --- | --- | --- |
 | **Ziel** | In den Top-10 ranken | Von der KI zitiert oder genannt werden |
 | **Ergebnis** | Liste blauer Links | KI gibt die Antwort direkt |
@@ -78,7 +78,7 @@ Nein. Gute Inhalte können beidem dienen. Ein Artikel, der technisch sauber geba
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – technisch sauber, schnell und mit klaren Leistungstexten. Darauf bauen wir auf: Wir trennen SEO und GEO nicht in zwei teure Silos, sondern arbeiten an Website, Google-Profil und Fachseiten so, dass sie in der klassischen Suche **und** in KI-Assistenten wie ChatGPT funktionieren – mit dem Ziel, dass Ihr Betrieb bei Google, in Google Maps und in ChatGPT die erste Wahl ist.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

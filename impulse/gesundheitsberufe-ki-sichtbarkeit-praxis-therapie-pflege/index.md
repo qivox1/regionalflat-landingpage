@@ -112,7 +112,7 @@ Der erste Durchgang ist überschaubar: Leistungen ausformulieren, Behandlerprofi
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Praxiswebsite – schnell, fürs Handy gemacht, mit Leistungen, Behandelnden und häufigen Patientenfragen in ganzen Sätzen. Darauf aufbauend übernimmt das Paket die laufende Arbeit: ein gepflegtes Google-Profil mit stimmigen Angaben und ab dem Paket Professional neue Fachseiten zu den Fragen, die Ihre Patientinnen und Patienten wirklich stellen. Texte für Heilberufe formulieren wir sachlich – ohne Heilungsversprechen, ohne Superlative –, denn in diesem Bereich ist das ohnehin der wirksamere Weg.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

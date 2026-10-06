@@ -98,7 +98,7 @@ Dann geht es Ihnen wie fast allen. Der Nachmittag selbst ist nicht das Problem �
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – mit einer Über-uns-Seite, die zeigt, wer hinter Ihrem Betrieb steht, und klaren Leistungstexten. Darauf aufbauend pflegen wir Ihr Google-Profil, schreiben je nach Paket gemeinsam mit Ihnen Fachseiten, die Ihre Erfahrung zeigen statt sie zu behaupten, und helfen beim Sammeln von Google-Bewertungen. Im Monatsbericht sehen Sie, ob Ihr Betrieb bei Google, in Google Maps und in ChatGPT gefunden wird.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

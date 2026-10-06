@@ -111,7 +111,7 @@ Und zu der Frage „Was passiert, wenn nichts passiert?", die Sie jedem Anbieter
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht und mit klaren Leistungstexten. Ob sich ein Paket für Ihren Betrieb lohnt, können Sie mit der Rechnung oben selbst prüfen. Hier sehen Sie, was in welchem Paket steckt:
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

@@ -83,7 +83,7 @@ Das ist mühsam, aber im Kern fair: Es belohnt die, die echte Substanz aufbauen,
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – die Quelle, auf die Google und KI immer wieder zurückgreifen. Darauf aufbauend Vertrauenssignale systematisch aufzubauen – klare Inhalte schreiben, das Google-Profil pflegen, mehr Bewertungen sammeln, in Verzeichnissen mit stimmigen Firmendaten präsent sein – ist genau die Art von kontinuierlicher Arbeit, für die im Tagesgeschäft selten Zeit bleibt. Im regionalflat-Paket übernehmen wir sie Monat für Monat, statt in einem einmaligen Strohfeuer.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

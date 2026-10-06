@@ -101,7 +101,7 @@ Mit vollständigem Profil, wachsender Zahl an Bewertungen und passenden Seiten h
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht und mit klaren Leistungstexten. Darauf aufbauend sind Google-Profil, Fachseiten mit lokalem Bezug und Bewertungen – genau die Local-SEO-Grundlagen aus diesem Artikel – im Paket enthalten. Wir übernehmen die laufende Pflege, damit Ihr Betrieb bei Google und in Google Maps die erste Wahl sein kann, ohne dass Sie sich selbst darum kümmern müssen.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |

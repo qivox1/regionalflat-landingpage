@@ -95,7 +95,7 @@ Bei den KI-Modellen stehen wir heute genau an diesem Punkt: Vieles ist noch in B
 
 Grundlage jedes regionalflat-Pakets ist Ihre neue Website – schnell, fürs Handy gemacht und mit klaren Leistungstexten, inklusive Hosting und Pflege. Darauf aufbauend an allen weiteren Signalen gleichzeitig zu arbeiten – das Google-Profil pflegen, Bewertungen sammeln, neue Inhalte erstellen – kostet Zeit und Know-how, die Ihnen als Inhaber oft fehlen. Das regionalflat-Paket übernimmt diese laufende Arbeit zu einem festen Monatspreis, damit Ihr Betrieb bei Google, in Google Maps und in ChatGPT eine echte Chance hat, die erste Wahl zu sein.
 
-| | Starter | Professional | Premium |
+| Leistung | Starter | Professional | Premium |
 | --- | --- | --- | --- |
 | **Monatspreis (zzgl. MwSt.)** | 299 € | 499 € | 799 € |
 | **Wofür** | ordentlich auftreten | mehr Anfragen | Anfragen und neue Mitarbeiter |
